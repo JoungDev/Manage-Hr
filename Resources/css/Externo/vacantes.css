@@ -729,4 +729,145 @@ body {
     outline: none;
     font-size: 16px;
   }
+  .formulario1 {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+    z-index: 15;
+    border-radius: 10px;
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    margin-left: 30%;
+    background: linear-gradient(90deg, #007bff, #42a5f5);
+  }
   
+  .formulario1 #header {
+    width: 90%;
+    margin-top: 3%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 5%;
+    z-index: 10;
+    border-radius: 10px;
+    color: white;
+    box-shadow: none;
+    border: none;
+    background-color: rgb(46, 68, 227);
+  }
+  .formulario1 img {
+    margin-right: 2%;
+    width: 50px;
+    height: 50px;
+  }
+  .formulario1 form,
+  .formulario2 form,
+  .formulario3 form {
+    width: 90%;
+    height: 750px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  .formulario1 font,
+  .formulario2 font,
+  .formulario3 font {
+    margin-top: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 20px;
+    color: white;
+  }
+  .formulario1 input[type="number"],
+  .formulario1 input[type="text"],
+  .formulario1 input[type="email"],
+  .formulario1 select {
+    width: 90%;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 15px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #ccc;
+    color: white;
+  }
+  .formulario1 textarea {
+    width: 90%;
+    height: 80px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 15px;
+    height: 80px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #ccc;
+    color: white;
+  }
+  .formulario2 input[type="number"],
+  .formulario2 input[type="text"],
+  .formulario2 input[type="email"],
+  .formulario2 select,
+  .formulario2 input[type="date"],
+  .formulario2 input[type="file"] {
+    width: 90%;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 15px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #ccc;
+    color: #aaa;
+  }
+  .formulario3 input[type="number"],
+  .formulario3 input[type="text"],
+  .formulario3 input[type="email"],
+  .formulario3 select,
+  .formulario3 input[type="date"],
+  .formulario3 input[type="file"] {
+    width: 90%;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 15px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #ccc;
+    color: #aaa;
+  }
+  .formulario1 label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 50%;
+    border-radius: 10px;
+    background: #09388f;
+    padding: 2%;
+  }
+  .formulario1 label:hover {
+    background-color: #123d88;
+    cursor: pointer;
+  }
+  .formulario1 .chequed2,
+  .formulario2 .chequed3,
+  .formulario3 .chequed4 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    font-size: 25px;
+    color: white;
+    width: 40%;
+    height: 80px;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #007bff, #42a5f5);
+  }

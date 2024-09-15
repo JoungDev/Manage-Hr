@@ -33,13 +33,12 @@ body {
     overflow-y: auto; /* Permite el desplazamiento dentro de la sidebar si el contenido es largo */
 }
 
-.logito{
+.logito {
     background-color: #10d42a00;
     padding-top: 15px;
     width: 100%;
     display: flex;
 }
-
 
 .menu {
     display: flex;
@@ -48,7 +47,6 @@ body {
     padding-top: 200px;
     background-color: #dfcc2300; /* Color de fondo del menú */
     width: 100%;
-
 }
 
 .menu > li {
@@ -75,7 +73,8 @@ body {
 
 .menu > li > a:hover {
     border-radius: 10px;
-    background: linear-gradient(90deg, #007bff, #42a5f5);color: #fff;
+    background: linear-gradient(90deg, #007bff, #42a5f5);
+    color: #fff;
     box-shadow: 0px 4px 10px rgba(12, 65, 180, 0.5);
 }
 
@@ -84,10 +83,10 @@ body {
     position: absolute; /* Posiciona el sub-menú relativo al ítem del menú */
     top: 100%; /* Coloca el sub-menú justo debajo del ítem del menú */
     left: 0;
-    list-style-type: none; 
+    list-style-type: none;
     padding: 10px;
     margin: 3px;
-    background-color: #6e6cfa00; 
+    background-color: #6e6cfa00;
     z-index: 1000; /* Asegura que el sub-menú esté por encima de otros elementos */
     width: 100%;
     font-size: 18px;
@@ -100,7 +99,6 @@ body {
     padding: 10px 20px; /* Espaciado interno */
     color: white; /* Color del texto */
     text-decoration: none; /* Elimina el subrayado */
-    
 }
 
 .sub-menu a img {
@@ -111,7 +109,8 @@ body {
 
 .sub-menu a:hover {
     border-radius: 10px;
-    background: linear-gradient(90deg, #007bff, #42a5f5);color: #fff;
+    background: linear-gradient(90deg, #007bff, #42a5f5);
+    color: #fff;
     box-shadow: 0px 4px 10px rgba(12, 65, 180, 0.5);
 }
 
@@ -177,7 +176,6 @@ body {
     color: #6b7280;
 }
 
-
 /* Muestra el sub-menú al pasar el ratón sobre el ítem del menú principal */
 .menu > li:hover .sub-menu {
     display: block;
@@ -193,15 +191,16 @@ body {
     height: 100vh; /* Asegura que el main-content ocupe toda la altura disponible */
     overflow-y: auto; /* Permite el desplazamiento del contenido en el main-content */
 }
+
 .dashboard {
     position: relative;
     background-color: #202940;
     padding: 40px 20px 20px 20px;
     border-radius: 8px;
-    margin: 20px /* Permite el desplazamiento dentro de dashboard si es necesario */
+    margin: 20px; /* Permite el desplazamiento dentro de dashboard si es necesario */
 }
 
-.logout{
+.logout {
     display: flex;
     height: 100vh;
     justify-content: left;
@@ -210,24 +209,26 @@ body {
 }
 
 .logout-button {
-    background: linear-gradient(90deg, #007bff, #42a5f5);color: #fff;
+    background: linear-gradient(90deg, #007bff, #42a5f5);
+    color: #fff;
     box-shadow: 0px 4px 10px rgba(12, 65, 180, 0.5);
-    border: none; 
-    padding: 10px 20px; 
-    text-align: center; 
-    text-decoration: none; 
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
     margin-left: 0px;
-    font-size: 16px; 
-    margin: 10px; 
+    font-size: 16px;
+    margin: 10px;
     cursor: pointer;
-    border-radius: 8px; 
-    transition: background-color 0.3s; 
-    
+    border-radius: 8px;
+    transition: background-color 0.3s;
 }
+
 .sidebar img {
     background-color: #3498db00;
     width: 100%;
 }
+
 .table-title {
     position: absolute;
     top: -20px;
@@ -241,11 +242,11 @@ body {
     font-weight: bold;
 }
 
-.item{
-    margin: 9px; 
+.item {
+    margin: 9px;
     background-color: #30395a6b;
-    padding: 0px; 
-    border-radius: 10px; 
+    padding: 0px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     transition: border 0.2s ease;
@@ -253,18 +254,17 @@ body {
 }
 
 .item .profile {
-    width: 65px; 
+    width: 65px;
     height: 65px;
     margin: 20px;
     border-radius: 100px;
-    
-    
 }
-.item .text{
+
+.item .text {
     width: 100%;
 }
 
-.text p{
+.text p {
     margin-top: 5px;
     margin-left: 5px;
     color: #ffffff;
@@ -275,26 +275,24 @@ body {
     color: #3f6ed3;
 }
 
-.vacantes{
+.vacantes {
     display: grid;
-    grid-template-columns: 70% 30%; 
+    grid-template-columns: 70% 30%;
     margin-top: 20px;
     height: 97%;
     border-radius: 15px;
-
 }
 
-.seleccion{
+.seleccion {
     margin: 15px;
     box-shadow: 0px 6px 12px rgba(34, 80, 206, 0.705);
-    background: linear-gradient(90deg, #007bff, #42a5f5);color: #fff;
+    background: linear-gradient(90deg, #007bff, #42a5f5);
+    color: #fff;
     border-radius: 15px;
     padding: 10px;
-    
-    
 }
 
-.seleccion-titulo h2{
+.seleccion-titulo h2 {
     display: flex;
     border: 3px solid #ffffff00;
     justify-content: center;
@@ -303,29 +301,31 @@ body {
     color: #ffffff;
     border-radius: 10px;
     padding: 10px;
-    
 }
 
-.contenido{
+.contenido {
     background-color: #242c5a;
     padding: 17px;
     border-radius: 10px;
 }
 
-.contenido p{
-    text-align: justify;
+.contenido p {
+    text-align: justify;
 }
-.general .item .buttons img{
-    width: 40px; 
+
+.general .item .buttons img {
+    width: 40px;
     height: 40px;
     margin-bottom: 10%;
     cursor: pointer;
 }
+
 #checs {
     margin-left: 15%;
-  }
-  .alerta,
-  .alerta2 {
+}
+
+.alerta,
+.alerta2 {
     margin-top: 15%;
     margin-left: 35%;
     width: 600px;
@@ -339,21 +339,24 @@ body {
     background: linear-gradient(90deg, #007bff, #42a5f5);
     border-radius: 20px;
     box-shadow: 2px 2px 2px #172134;
-  }
-  .alerta img,
-  .alerta2 img {
+}
+
+.alerta img,
+.alerta2 img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-  }
-  .alerta h1,
-  .alerta2 h1 {
+}
+
+.alerta h1,
+.alerta2 h1 {
     color: white;
     padding: 5%;
     font-size: 25px;
-  }
-  .alerta a,
-  .alerta2 a {
+}
+
+.alerta a,
+.alerta2 a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -367,35 +370,148 @@ body {
     border-radius: 10px;
     text-decoration: none;
     margin-left: 75%;
-  }
-  .formulario1,
-  .alerta,
-  .alerta2 {
+}
+
+.formulario1,
+.alerta,
+.alerta2 {
     display: none;
-  }
-  #chec1,
-  #chec2,
-  #chec3 {
+}
+
+#chec1,
+#chec2,
+#chec3 {
     display: none;
-  }
-  
-  #chec1:checked ~ .formulario1 {
+}
+
+#chec1:checked ~ .formulario1 {
     display: flex;
-  }
-  #chec2:checked ~ .formulario1 {
+}
+
+#chec2:checked ~ .formulario1 {
     display: none;
-  }
-  #chec2:checked ~ .alerta {
+}
+
+#chec2:checked ~ .alerta {
     display: flex;
-  }
-  
-  #chec3:checked ~ .alerta2 {
+}
+
+#chec3:checked ~ .alerta2 {
     display: flex;
-  }
-  
-  #chec1:checked ~ .container,
-  #chec2:checked ~ .container,
-  #chec3:checked ~ .container {
-      
+}
+
+#chec1:checked ~ .container,
+#chec2:checked ~ .container,
+#chec3:checked ~ .container {
     opacity: 0.2;
-  }
+}
+
+.formulario1 {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+    z-index: 15;
+    border-radius: 10px;
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    margin-left: 30%;
+    background: linear-gradient(90deg, #007bff, #42a5f5);
+}
+
+.formulario1 #header {
+    width: 60%;
+    margin-top: -6%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(46, 68, 227);
+}
+
+.formulario1 form{
+    width: 90%;
+    height: 750px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.formulario1 font {
+    margin-top: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 20px;
+    color: white;
+}
+
+.formulario1 input[type="number"],
+.formulario1 input[type="text"] {
+    width: 90%;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 15px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #ffffff;
+    color: white;
+}
+
+.formulario1 textarea {
+    width: 90%;
+    height: 80px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 15px;
+    height: 80px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #ffffff;
+    color: white;
+}
+
+.formulario1 label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 30%;
+    border-radius: 10px;
+    background-color: rgb(46, 68, 227);
+    padding: 2%;
+}
+
+.formulario1 label:hover {
+    background-color: #123d88;
+    cursor: pointer;
+}
+
+.formulario1 .chequed2,
+.formulario1 .chequed3,
+.formulario1 .chequed4 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    font-size: 25px;
+    color: white;
+    width: 40%;
+    height: 80px;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #007bff, #42a5f5);
+}
+
+.circle {
+    margin-left: 650px;
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+}
