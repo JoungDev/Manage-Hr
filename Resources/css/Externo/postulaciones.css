@@ -1,0 +1,210 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+.contenido-postulaciones{
+    height: 100vh;
+    background: #202940;
+}
+.top-bar {
+   width: 90%;
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #1f293f00;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px #28375800;
+}
+
+.search-bar input {
+    background-color: #ffffff00;
+    border: 2px solid #adbbda11;
+    width: 400px;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+}
+
+.user-info {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons img, td img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-profile .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.user-email {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.dashboard {
+    background-color: #f4f7fa#2f4b88;;
+    flex: 1;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    
+    overflow: auto; /* Permite el desplazamiento dentro de dashboard si es necesario */
+}
+.showing label{
+    color:white
+}
+.showing select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+tr{
+    border-bottom: 2px solid #373232;
+    
+}
+
+
+.filter-button,
+.export-button,
+.add-product-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-button {
+    background-color: #f3f4f6;
+}
+
+.export-button {
+    background-color: #e5e7eb;
+}
+
+.add-product-button {
+    background-color: #3b82f6;
+    color: #fff;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.product-table th, .product-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-table th {
+    background-color: #41538f;
+    color: white;
+}
+
+.product-table td {
+    height: 30px;
+    vertical-align: middle;
+    text-align: start;
+    color: white;
+}
+.product-table td img{
+   border-radius: 50%;
+}
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.status.pending {
+    background-color: #fbbf24;
+}
+
+.status.active {
+    background-color: #22c55e;
+}
+
+.status.inactive {
+    background-color: #ef4444;
+}
+
+.status.onsale {
+    background-color: #3b82f6;
+}
+
+.status.bouncing {
+    background-color: #6366f1;
+}
+
+.action-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pages {
+    display: flex;
+    gap: 5px;
+}
+
+.page-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #f3f4f6;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.page-button.active {
+    background-color: #3b82f6;
+    color: #fff;
+}
+
+.prev-button,
+.next-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #f3f4f6;
+    border-radius: 5px;
+    cursor: pointer;
+}

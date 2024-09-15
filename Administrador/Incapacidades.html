@@ -1,0 +1,207 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incapacidades</title>
+    <link rel="stylesheet" href="../Resources/css/Incapacidades.css">
+
+</head>
+<body>
+   
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logito">
+            <img src="/Resources/Images/logo.png" alt="">
+            </div>
+            <ul class="menu">
+                <li><a href="./directorio.html"><img src="../Resources/Images/Icons/clipboard-regular.svg" alt="Icono Directorio"> Directorio</a></li>
+                <li><a href="./vacantes.html"><img src="../Resources/Images/Icons/briefcase-solid.svg" alt="Icono Vacantes"> Vacantes</a></li>
+                <li><a href="./vacaciones.html"><img src="../Resources/Images/Icons/suitcase-solid.svg" alt="Icono Vacaciones"> Vacaciones</a></li>
+                <li><a href="./Incapacidades.html"><img src="../Resources/Images/Icons/book-medical-solid.svg" alt="Icono Incapacidades"> Incapacidades</a></li>
+                <li><a href="./horasextra.html"><img src="/Resources/Images/Icons/calendar-plus-solid.svg" alt="Icono Horas Extra"> Horas extra</a></li>
+                <li><a href="./pazysalvo.html"><img src="../Resources/Images/Icons/check-to-slot-solid.svg" alt="Icono Paz y Salvos"> Paz y Salvos</a></li>
+            </ul>
+            <div class="logout">
+            <a href="/index.html"><button class="logout-button">Cerrar Sesión</button></a>
+            </div>
+        </aside>
+        <main class="main-content">
+            <div class="top-bar">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="user-info">
+                    <div class="icons">
+                        <img src="/Resources/Images/Icons/notificaciones.png" alt="Notification Icon">
+                    </div>
+                    <div class="user-profile">
+                        <img src="/Resources/Images/1.jpg" alt="User Avatar" class="avatar">
+                        <div class="user-details">
+                            <span class="user-name">Juan Joven</span>
+                            <span class="user-email">Administrador</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="checkbox" id="chequed1">
+            <div class="cuadro-blanco1">
+                <a href="./vacaciones.html">
+                    <img src="../Resources/Images/Icons/circle.svg" id="circle">
+                </a>
+                <form class="search-form" action="#" method="get">
+                    <div class="form-group">
+                        <label for="start-date" class="form-label">Fecha Inicio:</label>
+                        <input type="date" id="start-date" name="start-date">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="end-date" class="form-label">Fecha Final:</label>
+                        <input type="date" id="end-date" name="end-date">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="cargo" class="form-label">Cargo:</label>
+                        <select id="cargo" name="cargo">
+                            <option value="">Seleccionar Cargo</option>
+                            <option value="Asesor">Asesor</option>
+                            <option value="Programador">Programador</option>
+                            <option value="Manager">Manager</option>
+                            <option value="Director">Director</option>
+                            <option value="Desarrollador">Desarrollador</option>
+                        </select>
+                    </div>
+                
+                    
+                </form>
+                <img src="../Resources/Images/grafica.jpg">
+                
+                <button class="descargar">Descargar</button>
+            </div>
+            <section class="dashboard">
+                <div class="titulo">
+                    <h1 class="letra">Incapacidades</h1>
+                </div>
+
+                <div class="horas">
+                    <div class="table-container">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Cargo</th>
+                                    <th>Estado</th>
+                                    <th>Fecha Inicio</th>
+                                    <th>Fecha Final</th>
+                                    <th>Archivo</th>
+                                    <th>Accion</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John Michael</td>
+                                    <td>Asesor</td>
+                                    <td><span class="status complete">Aprobado</span></td>
+                                    <td>15/07/24</td>
+                                    <td>19/12/24</td>
+                                    <td class="actions"><a href="#">C:\Users\Joe\Documen...</a></td>
+                                    <td class="actions"><a href="#">Editar</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Alexa Liras</td>
+                                    <td>Desarrollador</td>
+                                    <td><span class="status complete">Aprobado</span></td>
+                                    <td>16/07/24</td>
+                                    <td>01/10/24</td>
+                                    <td class="actions"><a href="#">C:\Users\Joe\Documen...</a>
+                                    <td class="actions"><a href="#">Editar</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Laurent Perrier</td>
+                                    <td>Programador</td>
+                                    <td><span class="status rechazado">Rechazado</span></td>
+                                    <td>17/07/24</td>
+                                    <td>03/08/24</td>
+                                    <td class="actions"><a href="#">C:\Users\Joe\Documen...</a>
+                                    <td class="actions"><a href="#">Editar</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Richard Owens</td>
+                                    <td>Director</td>
+                                    <td><span class="status pending">Pendiente</span></td>
+                                    <td>19/07/24</td>
+                                    <td>03/03/25</td>
+                                    <td class="actions"><a href="#">C:\Users\Joe\Documen...</a>
+                                    <td class="actions"><a href="#">Editar</a></td>
+                                </tr>
+                                <tr>
+                                    <td>John Michael</td>
+                                    <td>Asesor</td>
+                                    <td><span class="status complete">Aprobado</span></td>
+                                    <td>15/07/24</td>
+                                    <td>22/01/25</td>
+                                    <td class="actions"><a href="#">C:\Users\Joe\Documen...</a>
+                                    <td class="actions"><a href="#">Editar</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Alexa Liras</td>
+                                    <td>Desarrollador</td>
+                                    <td><span class="status complete">Aprobado</span></td>
+                                    <td>16/07/24</td>
+                                    <td>31/09/24</td>
+                                    <td class="actions"><a href="#">C:\Users\Joe\Documen...</a>
+                                    <td class="actions"><a href="#">Editar</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Laurent Perrier</td>
+                                    <td>Programador</td>
+                                    <td><span class="status rechazado">Rechazado</span></td>
+                                    <td>17/07/24</td>
+                                    <td>20/07/24</td>
+                                    <td class="actions"><a href="#">C:\Users\Joe\Documen...</a>
+                                    <td class="actions"><a href="#">Editar</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Michael Clark</td>
+                                    <td>Manager</td>
+                                    <td><span class="status complete">Aprobado</span></td>
+                                    <td>18/07/24</td>
+                                    <td>05/09/24</td>
+                                    <td class="actions"><a href="#">C:\Users\Joe\Documen...</a>
+                                    <td class="actions"><a href="#">Editar</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Michael Clark</td>
+                                    <td>Manager</td>
+                                    <td><span class="status complete">Aprobado</span></td>
+                                    <td>18/07/24</td>
+                                    <td>24/10/24</td>
+                                    <td class="actions"><a href="#">C:\Users\Joe\Documen...</a>
+                                    <td class="actions"><a href="#">Editar</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Richard Owens</td>
+                                    <td>Director</td>
+                                    <td><span class="status pending">Pendiente</span></td>
+                                    <td>19/07/24</td>
+                                    <td>06/11/24</td>
+                                    <td class="actions"><a href="#">C:\Users\Joe\Documen...</a>
+                                    <td class="actions"><a href="#">Editar</a></td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                        <div class="reporte">
+                            <label for="chequed1">
+                                <h4>Generar Reporte</h4>
+                            </label>
+                    </div>
+                </div>
+            
+             </section>
+        </main>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,318 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 99%;
+  border: 2px solid #ccc;
+  background-color: #27274bb5;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #ccc;
+}
+header .contenido-izquierdo {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 40%;
+  height: 200px;
+}
+header .contenido-izquierdo img {
+  width: 40%;
+  height: 90%;
+}
+header .contenido-derecho {
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+
+  padding-left: 20px;
+  color: white;
+}
+header .contenido-derecho h1 {
+  font-size: 30px;
+}
+header .contenido-derecho h3 {
+  font-size: 20px;
+  padding: 0.5%;
+  margin-left: 2%;
+  text-align: justify;
+}
+.article-certificados {
+  width: 99%;
+  display: grid;
+  height: 400px;
+  margin-top: 1%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "estudios laboral";
+}
+.article-certificados .estudios {
+  border: 2px solid #ccc;
+  height: 400px;
+  margin-right: 0.5%;
+  border-radius: 10px;
+  background-color: #27274bb5;
+  padding: 5%;
+}
+.article-certificados .laboral {
+  border: 2px solid #ccc;
+  height: 400px;
+  margin-left: 0.5%;
+  border-radius: 10px;
+  background-color: #27274bb5;
+  padding: 5%;
+}
+.article-certificados .estudios aside,
+.article-certificados .laboral aside {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+  margin-top: 2%;
+  padding: 1%;
+}
+.article-certificados .estudios aside h3,
+.article-certificados .laboral aside h3 {
+  font-size: 20px;
+}
+.article-certificados .estudios aside h4,
+.article-certificados .laboral aside h4 {
+  font-size: 15px;
+}
+.article-certificados .estudios aside a,
+.article-certificados .laboral aside a {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  color: aliceblue;
+}
+.article-certificados .estudios aside a h6,
+.article-certificados .laboral aside a h6 {
+  font-size: 20px;
+  border: 2px solid #aaa;
+  padding: 2px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #007bff, #42a5f5);
+}
+.article-nivel {
+  display: grid;
+  grid-template-columns: 60% 39%;
+  grid-template-areas: "grafica-nivel calificacion-nivel";
+  height: 200px;
+  margin-top: 7%;
+}
+.article-nivel .grafica-nivel {
+  border: 2px solid #ddd;
+  margin-right: 0.5%;
+  border-radius: 10px;
+}
+.article-nivel .calificacion-nivel {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  border: 2px solid #ddd;
+  margin-left: 0.5%;
+  border-radius: 10px;
+  padding: 60px;
+  color: white;
+}
+.article-nivel .grafica-nivel img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+.paisaje{
+  margin-top: 5%;
+  margin-left: 1%;
+  position: absolute;
+  width: 95%;
+  height: 50%;
+  border-radius: 10px;
+}
+
+.profile-container {
+  position: relative;
+  display: flex;
+  max-width: 1500px; /* Ampliado para mayor visibilidad */
+  margin: 300px auto; /* Más margen para centrar */
+  background: #1F293F;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Sombra más suave */
+  padding: 30px; /* Más padding para un diseño más espacioso */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.profile-sidebar {
+  flex-basis:40%; /* Usando todo el espacio disponible */
+  background: #007bff;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px; /* Bordes redondeados para suavidad */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para profundidad */
+  height: 100vh;
+  gap: 20px;
+}
+
+.profile-photo {
+  margin-top: 20%;
+  width: 200px; /* Tamaño moderado */
+  height: 200px;
+  border-radius: 100px; /* Círculo perfecto */
+  border: 4px solid #ffffff; /* Borde sólido para destacar la foto */
+  margin-bottom: 100px; /* Espacio antes del texto */
+}
+
+.profile-info {
+  font-size: 18px; /* Tamaño de fuente adecuado */
+  line-height: 1.4; /* Espaciado de línea para legibilidad */
+  margin-bottom: 10px; /* Espacio entre elementos de texto */
+}
+
+.btn-download {
+  padding: 10px 20px;
+  background-color: #ffffff; /* Botón contrastante */
+  color: #007bff;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px; /* Botón redondeado */
+  cursor: pointer;
+  margin-top: 20px; /* Espacio después del último texto */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-download:hover {
+  background-color: #0056b3; /* Cambio de color al pasar el ratón */
+  color: #ffffff;
+}
+
+/* Agregar más estilo a los elementos de contacto */
+.contact-item {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icon {
+  width: 20px;
+  margin-right: 10px;
+  filter: invert(100%); /* Iconos blancos para visibilidad */
+}
+
+.contact-text {
+  font-size: 16px; /* Tamaño de fuente para información de contacto */
+}
+
+
+.profile-main {
+  flex-basis: 70%;
+  padding: 20px;
+  color: white;
+}
+
+.profile-main h2 {
+  color: #007bff;
+  margin-bottom: 15px; /* Espacio aumentado */
+  font-size: 26px; /* Fuente más grande */
+  font-weight: bold; /* Negrita */
+}
+
+.timeline-container h2{
+  color: #1F293F;
+
+}
+.profile-main p, .profile-main ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+  font-size: 16px; /* Tamaño de fuente uniforme */
+  line-height: 1.5; /* Mejora la legibilidad */
+}
+
+.profile-main ul {
+  list-style-type: disc; /* Estilo de lista más clásico */
+  padding-left: 20px; /* Alineación de lista */
+}
+.timeline-container {
+  position: relative;
+  padding-left: 50px; /* Espacio para la línea principal */
+  margin-top: 20px;
+}
+
+.timeline-block {
+  display: flex;
+  align-items: center; /* Alinear el contenido con los círculos */
+  margin-bottom: 50px; /* Espacio vertical entre bloques */
+}
+
+.timeline-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #2196F3;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+  z-index: 1000;
+}
+
+.timeline-circle.completed {
+  background-color: #2196F3; /* Verde para completado */
+}
+
+.timeline-circle.in-progress {
+  background-color: #2196F3; /* Azul para en progreso */
+}
+
+.timeline-content {
+  background-color: #007bff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 15px; /* Espacio entre el círculo y el contenido */
+  width: calc(100% - 60px); /* Ajuste de ancho */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Línea principal vertical */
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  top: 15px; /* Comenzar justo debajo del círculo superior */
+  left: 25px; /* Centrar la línea en el círculo */
+  width: 2px;
+  height: calc(100% - 30px); /* Ajustar altura al espacio total menos la altura de un círculo */
+  background-color: #2196F3;
+  z-index: -1;
+}
+
+/* Conectores entre círculos */
+.timeline-circle::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -122px; /* Ajustar según el espacio entre bloques */
+  transform: translateX(-50%);
+  width: 2px;
+  height: 120px; /* Altura para conectar al siguiente círculo */
+  background-color: #2196F3;
+}
+
+/* Eliminar la línea después del último círculo */
+.timeline-block:last-child .timeline-circle::after {
+  display: none;
+}
