@@ -19,7 +19,6 @@
                 <li><a href="./vacaciones.html"><img src="../Resources/Images/Icons/suitcase-solid.svg" alt="Icono Vacaciones"> Vacaciones</a></li>
                 <li><a href="./Incapacidades.html"><img src="../Resources/Images/Icons/book-medical-solid.svg" alt="Icono Incapacidades"> Incapacidades</a></li>
                 <li><a href="./horasextra.html"><img src="/Resources/Images/Icons/calendar-plus-solid.svg" alt="Icono Horas Extra"> Horas extra</a></li>
-                <li><a href="./pazysalvo.html"><img src="../Resources/Images/Icons/check-to-slot-solid.svg" alt="Icono Paz y Salvos"> Paz y Salvos</a></li>
             </ul>
             <div class="logout">
             <a href="/index.html"><button class="logout-button">Cerrar Sesión</button></a>
@@ -35,13 +34,19 @@
                         <img src="/Resources/Images/Icons/notificaciones.png" alt="Notification Icon">
                     </div>
                     <div class="user-profile">
-                        <img src="/Resources/Images/1.jpg" alt="User Avatar" class="avatar">
+                        <img src="/Resources/Images/2.jpg" alt="User Avatar" class="avatar">
                         <div class="user-details">
-                            <span class="user-name">Juan Joven</span>
-                            <span class="user-email">Administrador</span>
+                            <span class="user-name">Sharon Nicolle Lopez</span>
+                            <span class="user-email">Diseñadora UX/UI</span>
                         </div>
                     </div>
                 </div>
+            </div>
+            <input type="checkbox" id="chequed1">
+            <div class="cuadro-blanco1">
+                <img src="../Resources/Images/Icons/check-white.svg">
+                <p>Tu solicitud ha sido enviada correctamente</p>
+                <a href="incapacidades.html">Ok</a>
             </div>
             <section class="dashboard">
                 <div class="titulo">
@@ -49,44 +54,28 @@
                 </div>
 
                 <div class="formulario">
-                    <h1>¡Esperamos que te mejores pronto! <br> Completa tu solicitud de Incapacidad</h1>
+                    <h1>¡Deseamos que te mejores pronto! <br> Completa tu solicitud de Incapacidad</h1>
                     <form class="cuadro" action="/enviar-solicitud" method="post">
                         <div class="parte1">
                         <div class="form-row">
-                            <label for="nombre">Nombre del Empleado:</label>
-                            <input type="text" id="nombre" name="nombre" required>
+                            <label for="nombre">Fecha Inicio Incapacidad:</label>
+                            <input type="date" id="nombre" name="nombre" required>
                         </div>
                         <div class="form-row">
-                            <label for="posicion">Posición:</label>
-                            <input type="text" id="posicion" name="posicion" required>
+                            <label for="posicion">Fecha Final Incapacidad:</label>
+                            <input type="date" id="posicion" name="posicion" required>
                         </div>
-                        <div class="form-row">
-                            <label for="fecha-solicitud">Fecha de Solicitud:</label>
-                            <input type="date" id="fecha-solicitud" name="fecha_solicitud" required>
-                        </div>
-                        <div class="button-container">
-                            <button type="reset">Borrar</button>
-                        </div>
-                        </div>
-                        <div class="parte2">
-                        <div class="form-row full-width">
-                            <label for="fecha-inicio">Fecha de Inicio de Vacaciones:</label>
-                            <input type="date" id="fecha-inicio" name="fecha_inicio" required>
-                        </div>
-                        <div class="form-row full-width">
-                            <label for="fecha-fin">Fecha de Fin de Vacaciones:</label>
-                            <input type="date" id="fecha-fin" name="fecha_fin" required>
-                        </div>
-                        <div class="form-row full-width">
-                            <label for="numero-dias">Número de Días Solicitados:</label>
-                            <input type="number" id="numero-dias" name="numero_dias" min="1" required>
-                        </div>
-                        <div class="button-container">
-                            <button type="submit">Enviar Solicitud</button>
-                        </div>
-                        </div>
-            
                         
+                        <div class="form-row full-width">
+                            <label for="fecha-fin">Diagnostico</label>
+                            <input type="text" id="fecha-fin" name="fecha_fin" required>
+                        </div>
+    
+                        <div class="form-row full-width">
+                            <label for="fecha-inicio">Certificado Medico:</label>
+                            <input type="file" id="fecha-inicio" name="fecha_inicio" required>
+                        </div>
+                        <label for="chequed1" class="button">Enviar Solicitud</label>
                     </form>
                 </div>
             

@@ -1,190 +1,181 @@
-<!--<link rel="stylesheet" href="../Resources/css/vacantes.css">-->
-<link rel="stylesheet" href="../Resources/css/Externo/postulaciones.css" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<div class="contenido-postulaciones">
-  <div class="top-bar">
-    <div class="search-bar">
-      <input type="text" placeholder="Search" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postulaciones</title>
+    <link rel="stylesheet" href="../Resources/css/Externo/postulaciones.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logito">
+                <img src="/Resources/Images/logo.png" alt="">
+            </div>
+            <ul class="menu">
+                <li><a href="./perfil.html"><img src="../Resources/Images/Icons/user-solid.svg" alt="Icono Directorio"> Perfil</a></li>
+                <li><a href="./vacantes.html"><img src="../Resources/Images/Icons/briefcase-solid.svg" alt="Icono Vacantes"> Vacantes</a></li>
+                <li><a href="postulaciones.html"><img src="../Resources/Images/Icons/list-check-solid.svg" alt="Icono Vacantes"> Postulaciones</a></li>
+            </ul>
+            <div class="logout">
+                <a href="/index.html"><button class="logout-button">Cerrar Sesión</button></a>
+            </div>
+        </aside>
+        <main class="main-content">
+            <div class="top-bar">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="user-info">
+                    <div class="icons">
+                        <img src="/Resources/Images/Icons/notificaciones.png" alt="Notification Icon">
+                    </div>
+                    <div class="user-profile">
+                        <img src="/Resources/Images/4.jpg" alt="User Avatar" class="avatar">
+                        <div class="user-details">
+                            <span class="user-name">Sofia Hernanadez</span>
+                            <span class="user-email">Administradora De Empresas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="dashboard">
+                <div class="table-title">Postulaciones</div>
+                <table class="product-table">
+                    <thead>
+                        <tr>
+                            <th>Vacante</th>
+                            <th>Sueldo</th>
+                            <th>Cargo</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gerente Administrativo</td>
+                            <td>4.500.000</td>
+                            <td>Administradora de Empresas</td>
+                            <td><span class="status active">Postulado</span></td>
+                            <td>
+                                <div class="icons-2">
+                                    <img
+                                        src="../Resources/Images/Icons/delete.png"
+                                        alt="Eliminar"
+                                        title="Cancelar postulación"
+                                    />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Coordinador de Recursos Humanos</td>
+                            <td>3.800.000</td>
+                            <td>Administradora de Empresas</td>
+                            <td><span class="status active">Postulado</span></td>
+                            <td>
+                                <div class="icons-2">
+                                    <img
+                                        src="../Resources/Images/Icons/delete.png"
+                                        alt="Eliminar"
+                                        title="Cancelar postulación"
+                                    />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Analista Financiero</td>
+                            <td>4.200.000</td>
+                            <td>Administradora de Empresas</td>
+                            <td><span class="status pending">Proceso</span></td>
+                            <td>
+                                <div class="icons-2">
+                                    <img
+                                        src="../Resources/Images/Icons/delete.png"
+                                        alt="Eliminar"
+                                        title="Cancelar postulación"
+                                    />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Consultor de Negocios</td>
+                            <td>5.000.000</td>
+                            <td>Administradora de Empresas</td>
+                            <td><span class="status pending">Proceso</span></td>
+                            <td>
+                                <div class="icons-2">
+                                    <img
+                                        src="../Resources/Images/Icons/delete.png"
+                                        alt="Eliminar"
+                                        title="Cancelar postulación"
+                                    />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gerente de Operaciones</td>
+                            <td>4.800.000</td>
+                            <td>Administradora de Empresas</td>
+                            <td><span class="status inactive">Rechazado</span></td>
+                            <td>
+                                <div class="icons-2">
+                                    <img
+                                        src="../Resources/Images/Icons/delete.png"
+                                        alt="Eliminar"
+                                        title="Cancelar postulación"
+                                    />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jefe de Logística</td>
+                            <td>4.000.000</td>
+                            <td>Administradora de Empresas</td>
+                            <td><span class="status inactive">Rechazado</span></td>
+                            <td>
+                                <div class="icons-2">
+                                    <img
+                                        src="../Resources/Images/Icons/delete.png"
+                                        alt="Eliminar"
+                                        title="Cancelar postulación"
+                                    />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Director Comercial</td>
+                            <td>5.200.000</td>
+                            <td>Administradora de Empresas</td>
+                            <td><span class="status active">Postulado</span></td>
+                            <td>
+                                <div class="icons-2">
+                                    <img
+                                        src="../Resources/Images/Icons/delete.png"
+                                        alt="Eliminar"
+                                        title="Cancelar postulación"
+                                    />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Analista de Proyectos</td>
+                            <td>3.900.000</td>
+                            <td>Administradora de Empresas</td>
+                            <td><span class="status pending">Proceso</span></td>
+                            <td>
+                                <div class="icons-2">
+                                    <img
+                                        src="../Resources/Images/Icons/delete.png"
+                                        alt="Eliminar"
+                                        title="Cancelar postulación"
+                                    />
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
     </div>
-    <div class="user-info">
-      <div class="icons">
-        <img
-          src="../Resources/Images/Icons/notificaciones.png"
-          alt="Notification Icon"
-        />
-      </div>
-      <div class="user-profile">
-        <img
-          src="../Resources/Images/2.jpg"
-          alt="User Avatar"
-          class="avatar"
-        />
-        <div class="user-details">
-          <span class="user-name">Gladis Marín</span>
-          <span class="user-email">gladis21@managehr.com</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <section class="dashboard">
-    <div class="header">
-      <div class="header-actions">
-        <div class="showing">
-          <label for="showing">Showing</label>
-          <select id="showing">
-            <option value="10">10</option>
-            <option value="20">20</option>
-            <option value="50">50</option>
-          </select>
-        </div>
-      </div>
-    </div>
-    <br />
-    <table class="product-table">
-        <thead>
-            <tr>
-                <th>Vacante</th>
-                <th>Sueldo</th>
-                <th>Cargo</th>
-                <th>Estado</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Desarrollador Backend</td>
-                <td>3.500.000</td>
-                <td>Ingeniero de Software</td>
-                <td><span class="status active">Postulado</span></td>
-                <td>
-                    <div class="icons-2">
-                        <img
-                            src="../Resources/Images/Icons/delete.png"
-                            alt="Eliminar"
-                            title="Cancelar postulación"
-                        />
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>Ingeniero de Pruebas</td>
-                <td>4.200.000</td>
-                <td>Ingeniero de Pruebas</td>
-                <td><span class="status active">Postulado</span></td>
-                <td>
-                    <div class="icons-2">
-                        <img
-                            src="../Resources/Images/Icons/delete.png"
-                            alt="Eliminar"
-                            title="Cancelar postulación"
-                        />
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>Desarrollador Frontend</td>
-                <td>3.800.000</td>
-                <td>Desarrollador Frontend</td>
-                <td><span class="status pending">Proceso</span></td>
-                <td>
-                    <div class="icons-2">
-                        <img
-                            src="../Resources/Images/Icons/delete.png"
-                            alt="Eliminar"
-                            title="Cancelar postulación"
-                        />
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>DevOps Engineer</td>
-                <td>5.000.000</td>
-                <td>Ingeniero DevOps</td>
-                <td><span class="status pending">Proceso</span></td>
-                <td>
-                    <div class="icons-2">
-                        <img
-                            src="../Resources/Images/Icons/delete.png"
-                            alt="Eliminar"
-                            title="Cancelar postulación"
-                        />
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>Administrador de Base de Datos</td>
-                <td>4.500.000</td>
-                <td>Administrador de Base de Datos</td>
-                <td><span class="status inactive">Rechazado</span></td>
-                <td>
-                    <div class="icons-2">
-                        <img
-                            src="../Resources/Images/Icons/delete.png"
-                            alt="Eliminar"
-                            title="Cancelar postulación"
-                        />
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>Desarrollador Fullstack</td>
-                <td>2.800.000</td>
-                <td>Desarrollador Fullstack</td>
-                <td><span class="status inactive">Rechazado</span></td>
-                <td>
-                    <div class="icons-2">
-                        <img
-                            src="../Resources/Images/Icons/delete.png"
-                            alt="Eliminar"
-                            title="Cancelar postulación"
-                        />
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>Analista de Sistemas</td>
-                <td>3.200.000</td>
-                <td>Analista de Sistemas</td>
-                <td><span class="status inactive">Rechazado</span></td>
-                <td>
-                    <div class="icons-2">
-                        <img
-                            src="../Resources/Images/Icons/delete.png"
-                            alt="Eliminar"
-                            title="Cancelar postulación"
-                        />
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>Ingeniero de Seguridad</td>
-                <td>4.000.000</td>
-                <td>Ingeniero de Seguridad</td>
-                <td><span class="status inactive">Rechazado</span></td>
-                <td>
-                    <div class="icons-2">
-                        <img
-                            src="../Resources/Images/Icons/delete.png"
-                            alt="Eliminar"
-                            title="Cancelar postulación"
-                        />
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-
-    <div class="pagination">
-      <button class="prev-button">Previous</button>
-      <div class="pages">
-        <button class="page-button active">01</button>
-        <button class="page-button">02</button>
-        <button class="page-button">03</button>
-        <button class="page-button">04</button>
-        <button class="page-button">10</button>
-        <button class="page-button">11</button>
-      </div>
-      <button class="next-button">Next</button>
-    </div>
-  </section>
-</div>
+</body>
+</html>

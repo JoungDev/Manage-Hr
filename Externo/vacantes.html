@@ -1,241 +1,157 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../Resources/css/Externo/vacantes.css" />
-    <link rel="shortcut icon"  style="border-radius: 15px;"  href="../Resources/Images/logo.png"/>
-    <title>ManageHR</title>
-  </head>
-  <body>
-    <input type="checkbox" id="chequed1" >
-    
-    <div class="registro1">
-      <header class="header-registro">
-        <img class="imgheader" src="../Resources/Images/telefono-blanco.png" alt="">
-        <h1 class="h1header">Hoja de vida</h1>
-        <label for="chequed1"><h4>X</h4></label>
-      </header>
-      <section class="paso1">
-        
-        
-        
-
-      </section>
-      <form action="" class="frm1" enctype="multipart/form-data">
-        <div class="formularios">
-          <article id="formulario1">
-            <font>Nombres completos</font>
-            <input type="text" id="nombres" name="nombres" placeholder="Nombres completos">
-            <font>Apellidos completos</font>
-            <input type="text" id="apellidos" name="apellidos"  placeholder="Apellidos completos">
-            <font>Tipo documento</font>
-            <select name="tipodocumento" id="tipodocumento">
-              <option value="0">Seleccione una opcion</option>
-              <option value="1">C.C</option>
-              <option value="2">T.I</option>
-              <option value="3">C.E</option>
-            </select>
-            <font>Numero de documento</font>
-            <input type="text" id="numero-documento" name="numero-documento" placeholder="Numero de documento">
-            <font>Direccion residencia</font>
-            <input type="text" id="direccion-residencia" name="direccion-residencia" placeholder="Direccion de recidencia" >
-            <font>Numero Telefono celular</font>
-            <input type="number" id="telefono" name="telefono" placeholder="Numero de telefonocelular">
-          </article>
-          <article id="formulario2">
-            <font>Tipo de sangre</font>
-            <select name="gruposanguineo" id="gruposanguineo">
-              <option value="0">Seleccione una opcion</option>
-              <option value="1">A+</option>
-              <option value="2">A-</option>
-              <option value="3">B+</option>
-              <option value="4">B-</option>
-              <option value="4">AB+</option>
-              <option value="4">AB-</option>
-              <option value="4">O+</option>
-              <option value="4">O-</option>
-            </select>
-            <font>Edad</font>
-            <input type="number" id="edad" name="edad"  placeholder="Edad actual en numeros">
-            <font>Estado Civil</font>
-            <select name="estadocivil" id="estadocivil">
-              <option value="0">Seleccione una opcion</option>
-              <option value="1">Casado</option>
-              <option value="2">Soltero</option>
-              <option value="3">Divorciado</option>
-              <option value="4">Union libre</option>
-            </select>
-            <font>Estudios</font>
-            <input type="text" id="estudios" name="estudios" placeholder="Numero de documento">
-            <font>Referencia Laboral</font>
-            <input type="text" id="referencialaboral" name="referencialaboral" placeholder="Direccion de recidencia" >
-            <font>Certificado ref. laboral</font>
-            <div class="file-container">
-              <input type="file" id="btn-archivo" name="archivo"  >
-              <label for="btn-archivo" class="custom-file-upload">Subir Archivo</label>
-            </input>
-              
-              
-            </div>        
-            </article>
-        </div>
-        
-        <article id="botones">
-          <label for="chequed2">
-            <button  class="btn-siguiente">
-              <a href="usuario.html"><img src="../Resources/Images/Icons/arrow-right-long-solid.svg" alt="">
-              
-            Siguiente</a></button>
-          </label>
-          
-        </article>
-
-      </form>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacantes</title>
+    <link rel="stylesheet" href="../Resources/css/Empleado/vacantes.css">
+</head>
+<body>
+    <input type="checkbox" id="chequed1">
+    <div class="alerta2">
+        <img src="../Resources/Images/Icons/check.svg" alt="">
+        <h1>Postulación Exitosa!</h1>
+        <a href="./vacantes.html">Ok</a>
     </div>
-    
     <div class="container">
-      <section class="left">
-        <article class="article-busqueda">
-          <input type="text" placeholder="Buscar vacante" />
-          <input type="submit" value="Buscar" />
-        </article>
-        <article class="article-categorias">
-          <select class="select" name="categoria" id="categoria">
-            <option value="0">Seleccione una Vacante</option>
-            <option value="1">Ingenierias</option>
-            <option value="2">Call Center</option>
-            <option value="3">Software</option>
-            <option value="4">Recursos Humanos</option>
-            <option value="5">Tecnicos</option>
-          </select>
-          <select name="especialidad" id="especialidad">
-            <option value="0">Seleccione una Especialidad</option>
-            <option value="1">Industrial</option>
-            <option value="2">Mecanica</option>
-            <option value="3">Sisatemas</option>
-            <option value="4">Civil</option>
-            <option value="5">Petroleos</option>
-          </select>
-          <select name="salario" id="salario">
-            <option value="0">Seleccione una Salario</option>
-            <option value="1">$ 1.600.000</option>
-            <option value="2">$ 1.800.000</option>
-            <option value="3">$ 1.900.000</option>
-            <option value="4">$ 2.000.000</option>
-            <option value="5">$ 2.100.000</option>
-            <option value="6">$ 2.200.000</option>
-            <option value="7">$ 2.300.000</option>
-            <option value="8">$ 2.400.000</option>
-            <option value="9">$ 2.500.000</option>
-            <option value="10">$ 2.600.000</option>
-            <option value="11">$ 3.000.000</option>
-          </select>
-        </article>
-        <article class="article-vacantes">
-          <aside class="vacante">
-            <h3>Estudiantes de Ingeniería Civil / Arquitectura</h3>
-            <h4>ACTIVOS S.A.S.</h4>
-            <h5>Bogotá, D.C.</h5>
-            <h6>$ 1.400.000,00 (Mensual)</h6>
+        <aside class="sidebar">
+            <div class="logito">
+                <img src="/Resources/Images/logo.png" alt="">
+            </div>
+            <ul class="menu">
+                <li><a href="./perfil.html"><img src="../Resources/Images/Icons/user-solid.svg" alt="Icono Directorio"> Perfil</a></li>
+                <li><a href="./vacantes.html"><img src="../Resources/Images/Icons/briefcase-solid.svg" alt="Icono Vacantes"> Vacantes</a></li>
+                <li><a href="postulaciones.html"><img src="../Resources/Images/Icons/list-check-solid.svg" alt="Icono Vacantes"> Postulaciones</a></li>
+            </ul>
+            <div class="logout">
+                <a href="/index.html"><button class="logout-button">Cerrar Sesión</button></a>
+            </div>
         </aside>
-        <aside class="vacante">
-            <h3>Analista de Sistemas</h3>
-            <h4>TechCorp Ltda.</h4>
-            <h5>Bogotá, D.C.</h5>
-            <h6>$ 1.800.000,00 (Mensual)</h6>
-        </aside>
-        <aside class="vacante">
-            <h3>Asistente de Recursos Humanos</h3>
-            <h4>HumanSolutions</h4>
-            <h5>Bogotá, D.C.</h5>
-            <h6>$ 1.600.000,00 (Mensual)</h6>
-        </aside>
-        <aside class="vacante">
-            <h3>Consultor Técnico</h3>
-            <h4>TechConsult</h4>
-            <h5>Bogotá, D.C.</h5>
-            <h6>$ 2.000.000,00 (Mensual)</h6>
-        </aside>
-        <aside class="vacante">
-            <h3>Desarrollador de Software</h3>
-            <h4>SoftDev Inc.</h4>
-            <h5>Bogotá, D.C.</h5>
-            <h6>$ 2.200.000,00 (Mensual)</h6>
-        </aside>
-        <aside class="vacante">
-            <h3>Asesor Comercial</h3>
-            <h4>SalesPro</h4>
-            <h5>Bogotá, D.C.</h5>
-            <h6>$ 1.700.000,00 (Mensual)</h6>
-        </aside>
-        <aside class="vacante">
-            <h3>Ingeniero de Proyecto</h3>
-            <h4>Ingenieros Unidos</h4>
-            <h5>Bogotá, D.C.</h5>
-            <h6>$ 2.500.000,00 (Mensual)</h6>
-        </aside>
-        <aside class="vacante">
-            <h3>Especialista en Seguridad Informática</h3>
-            <h4>SecureTech</h4>
-            <h5>Bogotá, D.C.</h5>
-            <h6>$ 2.800.000,00 (Mensual)</h6>
-        </aside>
-        <aside class="vacante">
-            <h3>Ingeniero Electrónico</h3>
-            <h4>ElectroSystems</h4>
-            <h5>Bogotá, D.C.</h5>
-            <h6>$ 2.400.000,00 (Mensual)</h6>
-        </aside>
-        <aside class="vacante">
-            <h3>Coordinador de Proyectos</h3>
-            <h4>ProjectMasters</h4>
-            <h5>Bogotá, D.C.</h5>
-            <h6>$ 3.000.000,00 (Mensual)</h6>
-        </aside>
-        <aside class="vacante">
-            <h3>Gestor de Talento Humano</h3>
-            <h4>HRPlus</h4>
-            <h5>Bogotá, D.C.</h5>
-            <h6>$ 1.900.000,00 (Mensual)</h6>
-        </aside>
-        </article>
-      </section>
-      <section class="right">
-        <header>
-            <img src="../Resources/Icons/hombre-2.png" alt="">
-            <h4>Estudiantes de Ingeniería Civil</h4>
-        </header>
-            <article>
-                <aside id="aside-header"> 
-                  <h1>Estudiantes de Ingeniería Civil / Arquitectura</h1>
-                  <h4>ACTIVOS S A S</h4>
-                  <h5>Bogotá, D.C., Bogotá, D.C.</h5>
-                  <h6>$ 1.400.000,00 (Mensual)</h6>
-                    
-                </aside>
-                
-                <aside>
-                    <h3>$ 1.400.000,00 (Mensual)</h3>
-                    <h3>Contrato de Obra o labor</h3>
-                    <h3>Tiempo Completo</h3>
-                    <h3>Presencial</h3>
-                    <h4><p>Importante compañía aseguradora requiere Estudiantes de Ingeniería civil o Ingeniería industrial, deseable experiencia en actividades relacionadas con servicio al cliente a través del teléfono y/o presencial, manejo de proveedores, mantenimiento. Su principal función será acoger al cliente a través de la línea de atención telefónica, escuchar sus necesidades e inquietudes y coordinar toda la operación necesaria para lograr cumplir con la promesa de servicio</p></h4>
-                    <h4><p>Indispensable contar con habilidades de buena comunicación, persuasión, creatividad, recursividad, solución de problemas y contar con documentación al día.</p></h4>
-                    <h4><p>Horario de trabajo Domingo a Domingo turnos 7 horas rorativos mañana tarde noche
-                        Salario 1.400.000 + prestaciones de ley + recargos</p></h4>
-                    <h3><div class="titulo-requerimientos">Requerimientos</div></h3>
-                    <h4><p><ul>
-                        <li>Educación mínima: Universidad / Carrera técnica</li>
-                    </ul></p></h6>
-                    <div class="botones">
-                      <label for="chequed1">Postularme</label>
+        <main class="main-content">
+            <div class="top-bar">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="user-info">
+                    <div class="icons">
+                        <img src="/Resources/Images/Icons/notificaciones.png" alt="Notification Icon">
                     </div>
-                    
-                </aside>
-            </article>
-        
-      </section>
+                    <div class="user-profile">
+                        <img src="/Resources/Images/4.jpg" alt="User Avatar" class="avatar">
+                        <div class="user-details">
+                            <span class="user-name">Sofia Hernanadez</span>
+                            <span class="user-email">Administradora De Empresas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="dashboard">
+                <input type="checkbox" id="chequed1">
+                <div class="contenedor">
+                    <section class="left">
+                        <article class="article-busqueda">
+                            <input type="text" placeholder="Buscar vacante" />
+                            <input type="submit" value="Buscar" />
+                        </article>
+                        <article class="article-categorias">
+                            <select class="select" name="categoria" id="categoria">
+                                <option value="0">Seleccione una Vacante</option>
+                                <option value="1">Administración</option>
+                                <option value="2">Finanzas</option>
+                                <option value="3">Recursos Humanos</option>
+                                <option value="4">Operaciones</option>
+                                <option value="5">Marketing</option>
+                            </select>
+                            <select name="especialidad" id="especialidad">
+                                <option value="0">Seleccione una Especialidad</option>
+                                <option value="1">Gerencia General</option>
+                                <option value="2">Contabilidad</option>
+                                <option value="3">Gestión de Personal</option>
+                                <option value="4">Logística</option>
+                                <option value="5">Publicidad</option>
+                            </select>
+                            <select name="salario" id="salario">
+                                <option value="0">Seleccione un Salario</option>
+                                <option value="1">$ 2.000.000</option>
+                                <option value="2">$ 2.500.000</option>
+                                <option value="3">$ 3.000.000</option>
+                                <option value="4">$ 3.500.000</option>
+                                <option value="5">$ 4.000.000</option>
+                                <option value="6">$ 4.500.000</option>
+                                <option value="7">$ 5.000.000</option>
+                                <option value="8">$ 5.500.000</option>
+                                <option value="9">$ 6.000.000</option>
+                                <option value="10">$ 6.500.000</option>
+                            </select>
+                        </article>
+                        <article class="article-vacantes">
+                            <aside class="vacante">
+                                <h3>Gerente Administrativa</h3>
+                                <h4>AdminCorp S.A.S.</h4>
+                                <h5>Bogotá, D.C.</h5>
+                                <h6>$ 4.000.000,00 (Mensual)</h6>
+                            </aside>
+                            <aside class="vacante">
+                                <h3>Directora de Recursos Humanos</h3>
+                                <h4>HR Solutions Ltda.</h4>
+                                <h5>Bogotá, D.C.</h5>
+                                <h6>$ 5.000.000,00 (Mensual)</h6>
+                            </aside>
+                            <aside class="vacante">
+                                <h3>Contadora</h3>
+                                <h4>FinancePlus Inc.</h4>
+                                <h5>Bogotá, D.C.</h5>
+                                <h6>$ 3.800.000,00 (Mensual)</h6>
+                            </aside>
+                            <aside class="vacante">
+                                <h3>Jefe de Logística</h3>
+                                <h4>LogisticsPro</h4>
+                                <h5>Bogotá, D.C.</h5>
+                                <h6>$ 4.500.000,00 (Mensual)</h6>
+                            </aside>
+                            <aside class="vacante">
+                                <h3>Especialista en Marketing Digital</h3>
+                                <h4>Marketing Innovations</h4>
+                                <h5>Bogotá, D.C.</h5>
+                                <h6>$ 4.200.000,00 (Mensual)</h6>
+                            </aside>
+                        </article>
+                    </section>
+                    <section class="right">
+                        <header>
+                            <h4>Gerente Administrativa</h4>
+                        </header>
+                            <article>
+                                <aside id="aside-header">
+                                    <h1>Gerente Administrativa</h1>
+                                    <h4>Creative Minds S.A.S.</h4>
+                                    <h5>Bogotá, D.C.</h5>
+                                    <h6>$ 6.000.000,00 (Mensual)</h6>
+                                </aside>
+                                <aside>
+                                    <h3>$ 6.000.000,00 (Mensual)</h3>
+                                    <h3>Contrato a término indefinido</h3>
+                                    <h3>Tiempo Completo</h3>
+                                    <h3>Presencial</h3>
+                                    <h4><p>Responsable de gestionar las operaciones administrativas de la empresa, asegurando el cumplimiento de las políticas internas y el manejo eficiente de los recursos.</p></h4>
+                                    <h4><p>Requisitos: Experiencia en liderazgo de equipos, conocimientos en finanzas corporativas y habilidades en manejo de presupuestos.</p></h4>
+                                    <h4><p>Se valorará experiencia previa en la implementación de estrategias administrativas y gestión de recursos humanos.</p></h4>
+                                    <h3><div class="titulo-requerimientos">Requerimientos</div></h3>
+                                    <h4><p><ul>
+                                        <li>Educación mínima: Profesional en Administración de Empresas, Finanzas o afines.</li>
+                                        <li>Experiencia en gestión administrativa, control de presupuestos y optimización de recursos.</li>
+                                        <li>Conocimiento en procesos administrativos y legales relacionados con la gestión empresarial.</li>
+                                    </ul></p></h4>
+                                    <div class="botones">
+                                        <label for="chequed1">Postularme</label>
+                                    </div>
+                                </aside>
+                                
+                            </article>
+                    </section>
+                </div>
+            </section> 
+        </main>
     </div>
-  </body>
+</body>
 </html>

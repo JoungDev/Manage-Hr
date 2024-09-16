@@ -129,11 +129,11 @@ body {
 .search-bar input {
     background-color: #ffffff00;
     border: 1px solid #f8f8f8;
-    width: 300px;
+    width: 400px;
     padding: 10px;
     border-radius: 10px;
     outline: none;
-    font-size: 16px;
+    font-size: 16px;    
     color: white;
 }
 
@@ -230,222 +230,22 @@ body {
 .sidebar img {
     background-color: #3498db00;
     width: 100%;
+
 }
-
-
 .titulo {
     position: absolute;
-    top: -20px;
-    left: 2%;
-    background: linear-gradient(90deg, #007bff, #42a5f5);
-    padding: 1% 85% 1% 1%;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(82, 230, 205, 0.5);
-    color: white;
-}
-
-.letra {                       
-    color: #ffffff;
-    font-size: 22px;
-    
-}
-
-.table-container {
-    margin-top: 20px;
-    background-color: #16213e00;
-    border-radius: 10px;
-    padding: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.61);
-    margin-bottom: 20px;
-}
-.table-header {
-    background-color: #0F3460;
-    padding: 10px;
-    border-radius: 5px 5px 0 0;
-}
-.table-header h2 {
-    margin: 0;
-    font-size: 18px;
-}
-.table {
-    color: #ffffff;
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-.table th, .table td {
-    
-    padding: 20px;
-    text-align: left;
-}
-.table th {
-    background-color: #1a1a2e00;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.562);
-    color: #ffffff;
-}
-.table tr {
-    background-color: #0f336000;
-}
-.table tr:nth-child(even) {
-    background-color: #395bb900;
-}
-.status {
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    color: white;
-}
-.status.complete {
-    background-color: #28a745;
-}
-.status.pending {
-    background-color: #ffc507;
-}
-.status.rechazado {
-    background-color: #ff4c4c;
-}
-.actions a {
-    color: #1983f5;
-    text-decoration: none;
-}
-.cuadro-blanco1 {
-    display: none;
-    margin-top: 7%;
-    margin-left: 20%;
-    position: absolute;
-    width:40%;
-    height: 60%;
-    background: linear-gradient(90deg, #007bff, #42a5f5);
-    border-radius: 8px; /* Opcional: para bordes redondeados */
-    z-index: 2; /* Asegura que el cuadro blanco esté encima del div con clase .cubre */
-    
-}
-
-.cuadro-blanco1 img{
-    width: 50%;
-    margin-left: 28%;
-    margin-top: 30px;
-}
-
-
-.cuadro-blanco1 h4{
-    background-color: #007bff00;
-    color: #110303;
-    margin-top: 10px;
-    margin-left: 1000px;
-    margin-bottom: 10px;
-}
-
-
-.text label{
-    background-color: #ffffff52;
-    color: #000000;
-    font-weight: bolder;
-    padding: 10px;
-    margin-left: 6px;
-    border-radius: 10px;     
-}
-
-#chequed1:checked ~ .cuadro-blanco1 {
-    display: block;
-  }
-  
-#chequed1:checked ~ .dashboard{
-    opacity: 0.2;
-  }
-
-#chequed1{
-    display: none;
-}
-
-.reporte{
-    display: flex;
-    justify-content: center;
-    background-color: #73ff0000;
-    color: #007bff;
-}
-.reporte h4{
-    cursor: pointer;
-    color: #ffffffd0;
-    display: flex;
-    justify-content: end;
-    background: linear-gradient(90deg, #007bff, #42a5f5);
-    border-radius: 10px;
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    margin-top: 20px;
-}
-.cuadro-blanco1 #circle{
-    width: 7%;
-    height: 7%;
-    margin-left: 92%;
-    margin-top: 2%;
-}
-input[type="date"],
-select {
-    background-color: #09388f;
-    padding: 8px;
-    border-radius: 15px;
-    border: none;
-    font-size: 16px;
-    color: white;
-   
-}
-
-.descargar{
-    background-color: #09388f;
-    border: none;
-    padding: 2%;
-    color: rgba(255, 255, 255, 0.897);
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 5%;
-    margin-top: 40%;
-    border-radius: 20PX;
-    border: none;
-}
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    margin-top: 10px;
-}
-
-.form-label {
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-.search-form {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    padding: 10px;
-    color: rgb(255, 255, 255);
-    background-color: #1f293f00;
-    border-radius: 5px;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-.titulo {
+    top: -30px;
+    left: 50px;
+    width: 94%;
     background: linear-gradient(90deg, #007bff, #42a5f5);color: #fff;
-    box-shadow: 0px 4px 10px rgba(12, 65, 180, 0.5);
+    box-shadow: 0px 4px 10px rgba(82, 230, 205, 0.5);
     padding: 20px;
     border-radius: 10px;
-    font-size: 30px;
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-    align-items: center;
-    justify-content: right;
-    gap: 20px;
-
+    
 }
 
 .letra {                       
-    color: #ffffff;
     font-size: 22px;
-    
 }
 
 .cuadro{
@@ -453,12 +253,11 @@ select {
     border-radius: 20px;
     background: linear-gradient(90deg, #007bff, #42a5f5);color: #fff;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 65%;
-    width: 80%;
+    height: 72%;
+    width: 50%;
     padding: 30px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
 
 }
 
@@ -478,17 +277,6 @@ select {
     flex-direction: column;
     margin-left: 140px;
 }
-
-.parte2{
-    background-color: #007bff00;
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    
-    
-}
-
- 
 
 .form-row {
     margin-bottom: 45px;
@@ -538,17 +326,91 @@ input[type="number"]:focus {
     
 }
 
-button {
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 23%;
     background-color: #3665e7;
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 8px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    margin-left: 320px;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #0056b3;
+    cursor: pointer;
+}
+
+
+.cuadro-blanco1 {
+    display: none;
+    margin-top: 10%;
+    margin-left: 25%;
+    padding-top: 70px;
+    position: absolute;
+    width: 32%;
+    height: 40%;
+    background: linear-gradient(90deg, #007bff, #42a5f5);
+    border-radius: 8px; /* Opcional: para bordes redondeados */
+    z-index: 2; /* Asegura que el cuadro blanco esté encima del div con clase .cubre */
+}
+
+.cuadro-blanco1 img{
+    margin-left: 35%;
+    width: 180px;
+    height: 180px;
+}
+
+.cuadro-blanco1 p{
+    display: flex;
+    justify-content: center;
+    background-color: #007bff00;
+    color: #ffffff;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.cuadro-blanco1 a{
+    display: flex;
+    justify-content: center;
+    margin-left: 75%;
+    margin-top: 30px;
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    background: #0056b3;
+
+}
+
+#chequed1:checked ~ .cuadro-blanco1 {
+    display: block;
+  }
+  
+#chequed1:checked ~ .dashboard{
+    opacity: 0.2;
+  }
+
+#chequed1{
+    display: none;
+
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 350px;
+    background-color: #09388f;
+    width: 30%;
+    padding: 3%;
+    border-radius: 15px;
+    cursor: pointer;
 }

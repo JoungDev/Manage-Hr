@@ -455,7 +455,7 @@ body {
   
   
   form #botones button:hover {
-    background-color: #8174bb;
+    background-color: #007bff;
   }
   
   .btn-siguiente img {
@@ -649,7 +649,7 @@ body {
     background-color: #160094;
   }
   .left .article-categorias select option {
-    background: rgb(70, 70, 186);
+    background: #007bff;
    
   }
   .left .article-categorias select option:focus {
