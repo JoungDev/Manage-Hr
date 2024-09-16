@@ -7,45 +7,243 @@
     <link rel="stylesheet" href="../Resources/css/directorio.css">
 </head>
 <body>
-    <input type="checkbox" id="chequed1">
-    <div class="pdf-container">
-        <label for="chequed1"><h4>X</h4></label>
-        <img src="../Resources/Images/foto1.PNG" alt="" />
-        <h1>Emma Wilson</h1>
-        <h4>Direccion: Diag 45 # 45-20 este</h4>
-        <h4>Telefono: 324 578 2425</h4>
-        <h4>Edad: 28 Años</h4>
-        <h4>alejandra@gmail.com</h4>
+    <input type="checkbox" id="chec1">
+<input type="checkbox" id="chec2">
+<input type="checkbox" id="chec3">
+<input type="checkbox" id="chec4">
+<input type="checkbox" id="chec5">
+<input type="checkbox" id="chec6">
+<input type="checkbox" id="chec7">
+<input type="checkbox" id="chec8">
+<input type="checkbox" id="chec9">
+<input type="checkbox" id="chec10">
 
-        <h1>Experiencia Laboral</h1>
-        <h4>Alistamiento SAS</h4>
-        <h4>Desde Diciembre 20 de 2022 hasta Agosto 30 2024</h4>
-        <p>
-          <li>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
-            eligendi hic sit.
-          </li>
-          <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-            animi nesciunt fugiat quisquam vitae perspiciatis harum accusantium
-            aut, odio porro?
-          </li>
-        </p>
-        <h1>Estuduios</h1>
-        <h4>Universidad Andes</h4>
-        <h5>Ingenieria Industrial</h5>
-        <p>
-          <li>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab
-            excepturi, aut fuga quam iure nulla illum aspernatur dolorem.
-          </li>
-          <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-            tempore doloribus perferendis velit, quam quia reprehenderit
-            doloremque odit?
-          </li>
-        </p>
-      </div>
+<div class="formulario1">
+    <a href="directorio.html">
+        <img src="../Resources/Images/Icons/circle.svg" alt="" class="circle">
+    </a>
+    <header id="header">
+        <h1>Crear Empleado</h1>
+    </header>
+    <form action="">
+        <h2>Datos basicos</h2>
+        <font>Edad</font>
+        <input type="number" placeholder="Edad" id="edad" />
+        <font>Sexo</font>
+        <select name="sexo" id="sexo">
+            <option value="0">Mujer</option>
+            <option value="1">Hombre</option>
+            <option value="2">Otros</option>
+        </select>
+        <font>Telefono</font>
+        <input type="text" placeholder="telefono" />
+        <font>Direccion</font>
+        <input type="text" placeholder="Direccion">
+        <font>Correo</font>
+        <input type="text" id="correo" placeholder="Correo electronico">
+        <div id="botones">
+            <label id="labelChec" for="chec2">Siguiente</label>
+        </div>
+    </form>
+</div>
+
+<div class="formulario2">
+    <a href="./directorio.html">
+        <img src="../Resources/Images/Icons/circle.svg" alt="" class="circle">
+    </a>
+    <header id="header">
+        <h1>Crear Directorio</h1>
+    </header>
+    <form action="">
+        <h2>Estudios</h2>
+        <font>Institucion</font>
+        <input type="text" placeholder="Nombre Institucion" id="institucion" />
+        <font>Carrera</font>
+        <input type="text" placeholder="nombre de la carrera" id="carrera" />
+        <font>Fecha Ingreso</font>
+        <input type="date" placeholder="Fecha de inicio de la carrera" />
+        <font>Fecha Finalizacion</font>
+        <input type="date" placeholder="Fecha de Finalizacion" />
+        <font>Telefono</font>
+        <input type="text" placeholder="Telefono" />
+        <font>Certificado</font>
+        <label id="labelFile" for="image_uploads" class="custom-file-upload">
+            <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" aria-activedescendant="none" multiple>Seleccione Archivo
+        </label>
+        <div id="botones">
+            <label id="labelChec" class="chec3" for="chec3">Siguiente</label>
+        </div>
+    </form>
+</div>
+
+<div class="formulario3">
+    <a href="./directorio.html">
+        <img src="../Resources/Images/Icons/circle.svg" alt="" class="circle">
+    </a>
+    <header id="header">
+        <h1>Crear Directorio</h1>
+    </header>
+    <form action="">
+        <h2>Experiencia</h2>
+        <font>Empresa</font>
+        <input type="text" placeholder="" id="Empresa" value="Claro" />
+        <font>Cargo</font>
+        <input type="text" placeholder="" id="cargo" value="Analista de datos" />
+        <font>Fecha Ingreso</font>
+        <input type="date" placeholder="Fecha de inicio" />
+        <font>Fecha Finalizacion</font>
+        <input type="date" placeholder="Fecha de finalizacion" />
+        <font>Telefono</font>
+        <input type="text" placeholder="Telefono" />
+        <font>Certificado</font>
+        <label id="labelFile" for="image_uploads" class="custom-file-upload">
+            <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" aria-activedescendant="none" multiple>Seleccione Archivo
+        </label>
+        <div id="botones">
+            <label id="labelChec" for="chec4">Crear</label>
+        </div>
+    </form>
+</div>
+
+<div class="formulario4">
+    <header id="header">
+        <h1>Modificar Vacante</h1>
+        <a href="directorio.html"><img src="../Resources/Images/Icons/circle.svg" alt=""></a>
+    </header>
+    <form action="">
+        <font>Cargo</font>
+        <input type="text" placeholder="Ingrese el cargo" id="cargo" />
+        <font>Descripcion</font>
+        <textarea name="" rows="10" cols="4" id="Descripcion" placeholder="Descripcion detallada de la vacante"></textarea>
+        <font>Sueldo</font>
+        <input type="text" placeholder="Sueldo de la vacante" />
+        <font>Experiencia</font>
+        <input type="text" placeholder="Experiencia" />
+        <div id="botones">
+            <label for="chec2">
+                <img src="../Resources/Icons/plus-solid.svg" alt="">Modificar
+            </label>
+        </div>
+    </form>
+</div>
+
+<div class="formulario5">
+    <a href="directorio.html">
+        <img src="../Resources/Images/Icons/circle.svg" alt="" class="circle">
+    </a>
+    <header id="header">
+        <img src="../Resources/Images/foto1.PNG" alt="">
+        <h1>Emma Wilson</h1>
+    </header>
+    <form action="">
+        <h2>Datos basicos</h2>
+        <font>Edad</font>
+        <input type="number" placeholder="Edad" id="edad" value="35" />
+        <font>Sexo</font>
+        <select name="sexo" id="sexo">
+            <option value="0">Mujer</option>
+            <option value="1">Hombre</option>
+            <option value="2">Otros</option>
+        </select>
+        <font>Telefono</font>
+        <input type="text" placeholder="telefono" value="3224582124" />
+        <font>Direccion</font>
+        <input type="text" placeholder="Direccion" value=" Cr 3 # 12-30">
+        <font>Correo</font>
+        <input type="text" id="correo" placeholder="Correo electronico">
+        <div id="botones">
+            <label id="labelChec" for="chec6">Siguiente</label>
+        </div>
+    </form>
+</div>
+
+<div class="formulario6">
+    <a href="./directorio.html">
+        <img src="../Resources/Images/Icons/circle.svg" alt="" class="circle">
+    </a>
+    <header id="header">
+        <img src="../Resources/Images/foto1.PNG" alt="">
+        <h1>Emma Wilson</h1>
+    </header>
+    <form action="">
+        <h2>Estudios</h2>
+        <font>Institucion</font>
+        <input type="text" placeholder="" id="institucion" value="Sena" />
+        <font>Carrera</font>
+        <input type="text" placeholder="" id="carrera" value="Analisis y Desarrollo de Software" />
+        <font>Fecha Ingreso</font>
+        <input type="date" placeholder="" value="2020-01-24" />
+        <font>Fecha Finalizacion</font>
+        <input type="date" placeholder="" value="2023-01-24" />
+        <font>Telefono</font>
+        <input type="text" placeholder="telefono" value="356877878" />
+        <font>Certificado</font>
+        <label id="labelFile" for="image_uploads" class="custom-file-upload">
+            <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" aria-activedescendant="none" multiple>Seleccione Archivo
+        </label>
+        <div id="botones">
+            <label id="labelChec" for="chec7">Siguiente</label>
+        </div>
+    </form>
+</div>
+
+<div class="formulario7">
+    <a href="./directorio.html">
+        <img src="../Resources/Images/Icons/circle.svg" alt="" class="circle">
+    </a>
+    <header id="header">
+        <img src="../Resources/Images/foto1.PNG" alt="">
+        <h1>Emma Wilson</h1>
+    </header>
+    <form action="">
+        <h2>Experiencia</h2>
+        <font>Empresa</font>
+        <input type="text" placeholder="" id="Empresa" value="Claro" />
+        <font>Cargo</font>
+        <input type="text" placeholder="" id="cargo" value="Analista de datos" />
+        <font>Fecha Ingreso</font>
+        <input type="date" placeholder="" value="2020-01-24" />
+        <font>Fecha Finalizacion</font>
+        <input type="date" placeholder="" value="2023-01-24" />
+        <font>Telefono</font>
+        <input type="text" placeholder="Telefono" value="3203203565" />
+        <font>Certificado</font>
+        <label id="labelFile" for="image_uploads" class="custom-file-upload">
+            <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" aria-activedescendant="none" multiple>Seleccione Archivo
+        </label>
+        <div id="botones">
+            <label id="labelChec" for="chec8">Modificar</label>
+        </div>
+    </form>
+</div>
+
+<div class="alerta1">
+    <img src="../Resources/Images/Icons/check-white.svg" alt="" />
+    <h1>Se ha creado un nuevo empleado con éxito!</h1>
+    <a href="directorio.html">Ok</a>
+</div>
+
+<div class="alerta2">
+    <img src="../Resources/Images/Icons/check-white.svg" alt="" />
+    <h1>Se actualizó con éxito!</h1>
+    <a href="directorio.html">Ok</a>
+</div>
+
+<div class="alerta3">
+    <img src="../Resources/Images/Icons/bell-solid.svg" alt="" />
+    <h1>¿Desea eliminar del directorio a Emma Wilson?</h1>
+    <div class="col">
+        <a href="directorio.html">Cancelar</a>
+        <label for="chec10">Eliminar</label>
+    </div>
+</div>
+
+<div class="alerta4">
+    <img src="../Resources/Images/Icons/check-white.svg" alt="" />
+    <h1>¡Se eliminó con éxito!</h1>
+    <a href="directorio.html">Ok</a>
+</div>
+
     <div class="container">
         <aside class="sidebar">
             <div class="logito">
@@ -81,9 +279,11 @@
                     </div>
                 </div>
             </div>
-            
             <section>
-                <div class="table-section">
+                <div class="table-section">   
+                <label class="agregar" for="chec1">
+                    <img src="../Resources/Images/Icons/plus.svg"><h6>Agregar</h6>
+                </label>
                     <div class="table-title">Directorio</div>
                     <table class="table">
                         <thead>
@@ -112,9 +312,12 @@
                                 <td>emma@company.com</td>
                                 <td>Calle 100 #15-30, Bogotá</td>
                                 <td><span class="status online">ACTIVO</span></td>
-                                <td>
-                                    <label for="chequed1">
-                                        <img src="../Resources/Images/Icons/eye-solid.svg" alt="ver" title="Ver Hoja de vida"/>
+                                <td class="actions">
+                                    <label class="editar" for="chec5">
+                                        <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                    </label>
+                                    <label class="eliminar" for="chec9">
+                                        <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
                                     </label>
                                 </td>
                             </tr>
@@ -132,9 +335,12 @@
                                 <td>noah@company.com</td>
                                 <td>Carrera 7 #45-21, Bogotá</td>
                                 <td><span class="status online">ACTIVO</span></td>
-                                <td>
-                                    <label for="chequed1">
-                                        <img src="../Resources/Images/Icons/eye-solid.svg" alt="ver" title="Ver Hoja de vida"/>
+                                <td class="actions">
+                                    <label class="editar" for="chec5">
+                                        <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                    </label>
+                                    <label class="eliminar" for="chec9">
+                                        <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
                                     </label>
                                 </td>
                             </tr>
@@ -152,9 +358,13 @@
                                 <td>olivia@company.com</td>
                                 <td>Avenida 19 #120-10, Bogotá</td>
                                 <td><span class="status offline">INACTIVO</span></td>
-                                <td>
-                                    <label for="chequed1">
-                                        <img src="../Resources/Images/Icons/eye-solid.svg" alt="ver" title="Ver Hoja de vida"/>
+                                <td class="actions">
+                                    <label class="editar" for="chec5">
+                                        <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                    </label>
+                             
+                                    <label class="eliminar" for="chec9">
+                                        <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
                                     </label>
                                 </td>
                             </tr>
@@ -172,9 +382,13 @@
                                 <td>william@company.com</td>
                                 <td>Calle 26 #30-15, Bogotá</td>
                                 <td><span class="status online">ACTIVO</span></td>
-                                <td>
-                                    <label for="chequed1">
-                                        <img src="../Resources/Images/Icons/eye-solid.svg" alt="ver" title="Ver Hoja de vida"/>
+                                <td class="actions">
+                                    <label class="editar" for="chec5">
+                                        <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                    </label>
+                             
+                                    <label class="eliminar" for="chec9">
+                                        <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
                                     </label>
                                 </td>
                             </tr>
@@ -192,9 +406,13 @@
                                 <td>isabella@company.com</td>
                                 <td>Carrera 10 #58-70, Bogotá</td>
                                 <td><span class="status offline">INACTIVO</span></td>
-                                <td>
-                                    <label for="chequed1">
-                                        <img src="../Resources/Images/Icons/eye-solid.svg" alt="ver" title="Ver Hoja de vida"/>
+                                <td class="actions">
+                                    <label class="editar" for="chec5">
+                                        <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                    </label>
+                             
+                                    <label class="eliminar" for="chec9">
+                                        <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
                                     </label>
                                 </td>
                             </tr>
@@ -212,9 +430,13 @@
                                 <td>james@company.com</td>
                                 <td>Calle 72 #24-35, Bogotá</td>
                                 <td><span class="status online">ACTIVO</span></td>
-                                <td>
-                                    <label for="chequed1">
-                                        <img src="../Resources/Images/Icons/eye-solid.svg" alt="ver" title="Ver Hoja de vida"/>
+                                <td class="actions">
+                                    <label class="editar" for="chec5">
+                                        <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                    </label>
+                             
+                                    <label class="eliminar" for="chec9">
+                                        <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
                                     </label>
                                 </td>
                             </tr>
@@ -232,9 +454,13 @@
                                 <td>mia@company.com</td>
                                 <td>Carrera 15 #112-35, Bogotá</td>
                                 <td><span class="status offline">INACTIVO</span></td>
-                                <td>
-                                    <label for="chequed1">
-                                        <img src="../Resources/Images/Icons/eye-solid.svg" alt="ver" title="Ver Hoja de vida"/>
+                                <td class="actions">
+                                    <label class="editar" for="chec5">
+                                        <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                    </label>
+                             
+                                    <label class="eliminar" for="chec9">
+                                        <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
                                     </label>
                                 </td>
                             </tr>
@@ -252,9 +478,13 @@
                                 <td>alexander@company.com</td>
                                 <td>Calle 85 #12-20, Bogotá</td>
                                 <td><span class="status online">ACTIVO</span></td>
-                                <td>
-                                    <label for="chequed1">
-                                        <img src="../Resources/Images/Icons/eye-solid.svg" alt="ver" title="Ver Hoja de vida"/>
+                                <td class="actions">
+                                    <label class="editar" for="chec5">
+                                        <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                    </label>
+                             
+                                    <label class="eliminar" for="chec9">
+                                        <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
                                     </label>
                                 </td>
                             </tr>

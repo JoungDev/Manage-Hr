@@ -7,7 +7,96 @@
 
 </head>
 <body>
-   
+    <input type="checkbox" id="chec1">
+    <input type="checkbox" id="chec2">
+    <input type="checkbox" id="chec3">
+    <input type="checkbox" id="chec4">
+    <input type="checkbox" id="chec5">
+    <input type="checkbox" id="chec6">
+    
+    <div class="formulario1">
+        <a href="Incapacidades.html"><img src="../Resources/Images/Icons/circle.svg" alt=""></a>
+        <header id="header">
+            <h1>Crear Incapacidad</h1>
+        </header>
+        <form action="">
+            <font>Empleado </font>
+            <input type="text" placeholder="Nobre del empleado" id="empleado">
+            <font>Fecha de incapacidad </font>
+            <input type="date" placeholder="fecha" id="fecha">
+            <font>Hora Inicio</font>
+            <input type="time" placeholder="Hora Inicio" id="horaInicio">
+            <font>Hora Final</font>
+            <input type="time" placeholder="Hora final" id="horaFin">
+            <font>diagnostico</font>
+            <input type="text" placeholder="Diagnostico de la escusa" id="diagnostico">
+            <font>Evidencia</font>
+            <label id="labelFile" for="image_uploads" class="custom-file-upload"><input
+                type="file"
+                id="image_uploads"
+                name="image_uploads"
+                accept=".jpg, .jpeg, .png"
+                aria-activedescendant="none"
+                multiple
+              >Seleccione Archivo</label>
+              <div id="botones">
+                <label id="labelChec" for="chec2">Crear</label>
+            </div>
+        </form>
+    </div>
+    <div class="formulario2">
+        <a href="incapacidades.html"><img src="../Resources/Images/Icons/circle.svg" alt=""></a>
+        <header id="header">
+            <h1>Modificar Incapacidad</h1>
+        </header>
+        <form action="">
+            <font>Fecha de incapacidad </font>
+            <input type="date" placeholder="fecha" value="2024-09-15" id="fecha">
+            <font>Hora Inicio</font>
+            <input type="time" placeholder="Hora Inicio" value="15:03"  id="horaInicio">
+            <font>Hora Final</font>
+            <input type="time" placeholder="Hora final" value="18:03" id="horaFin">
+            <font>diagnostico</font>
+            <input type="text" placeholder="Diagnostico de la escusa" value="Tiene una incapacidad por accidente de 3 dias" id="diagnostico">
+            <font>Evidencia</font>
+            <label id="labelFile" for="image_uploads" class="custom-file-upload"><input
+                type="file"
+                id="image_uploads"
+                name="image_uploads"
+                accept=".jpg, .jpeg, .png"
+                aria-activedescendant="none"
+                multiple
+              >Seleccione Archivo</label>
+              <div id="botones">
+                <label id="labelChec" for="chec4">Modificar</label>
+            </div>
+        </form>
+    </div>
+
+        <div class="alerta1">
+            <img src="../Resources/Images/Icons/check-white.svg" alt="" />
+            <h1>Se Creo con exito !</h1>
+            <a href="Incapacidades.html">Ok</a>
+        </div>
+        <div class="alerta2">
+            <img src="../Resources/Images/Icons/check-white.svg" alt="" />
+            <h1>Se actualizo con exito!</h1>
+            <a href="Incapacidades.html">Ok</a>
+        </div>
+        <div class="alerta3">
+
+            <img src="../Resources/Images/Icons/bell-solid.svg" alt="" />
+            <h1>Seguro que quiere eliminar la incapacidad de John Michael </h1>
+            <div class="col">
+                <a href="Incapacidades.html">Cancelar</a>
+                <label for="chec6">Eliminar</label>
+            </div>
+        </div>
+        <div class="alerta4">
+            <img src="../Resources/Images/Icons/check-white.svg" alt="" />
+            <h1>Se elimino con exito!</h1>
+            <a href="Incapacidades.html">Ok</a>
+        </div>
     <div class="container">
         <aside class="sidebar">
             <div class="logito">
@@ -78,6 +167,11 @@
                 <button class="descargar">Descargar</button>
             </div>
             <section class="dashboard">
+
+                <label class="agregar" for="chec1">
+                    <img src="/../Resources/Images/Icons/plus.svg"><h6>Agregar</h6>
+                </label>
+
                 <div class="titulo">
                     <h1 class="letra">Incapacidades</h1>
                 </div>
@@ -104,8 +198,16 @@
                                     <td><span class="status complete">Aprobado</span></td>
                                     <td>15/07/24</td>
                                     <td>19/12/24</td>
-                                    <td class="actions"><a href="#">C:\Users\Joe\Documen...</a></td>
-                                    <td class="actions"><a href="#">Editar</a></td>
+                                    <td class="archivo">C:\Users\Joe\Documen...</td>
+                                    <td class="actions">
+                                        <label class="editar" for="chec3">
+                                            <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                        </label>
+                                 
+                                        <label class="eliminar" for="chec5">
+                                            <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
+                                        </label>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Alexa Liras</td>
@@ -113,8 +215,16 @@
                                     <td><span class="status complete">Aprobado</span></td>
                                     <td>16/07/24</td>
                                     <td>01/10/24</td>
-                                    <td class="actions"><a href="#">C:\Users\Joe\Documen...</a>
-                                    <td class="actions"><a href="#">Editar</a></td>
+                                    <td class="archivo">C:\Users\Joe\Documen...</td>
+                                        <td class="actions">
+                                            <label class="editar" for="chec3">
+                                                <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                            </label>
+                                     
+                                            <label class="eliminar" for="chec5">
+                                                <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
+                                            </label>
+                                        </td>
                                 </tr>
                                 <tr>
                                     <td>Laurent Perrier</td>
@@ -122,8 +232,16 @@
                                     <td><span class="status rechazado">Rechazado</span></td>
                                     <td>17/07/24</td>
                                     <td>03/08/24</td>
-                                    <td class="actions"><a href="#">C:\Users\Joe\Documen...</a>
-                                    <td class="actions"><a href="#">Editar</a></td>
+                                    <td class="archivo">C:\Users\Joe\Documen...</td>
+                                        <td class="actions">
+                                            <label class="editar" for="chec3">
+                                                <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                            </label>
+                                     
+                                            <label class="eliminar" for="chec5">
+                                                <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
+                                            </label>
+                                        </td>
                                 </tr>
                                 <tr>
                                     <td>Richard Owens</td>
@@ -131,8 +249,16 @@
                                     <td><span class="status pending">Pendiente</span></td>
                                     <td>19/07/24</td>
                                     <td>03/03/25</td>
-                                    <td class="actions"><a href="#">C:\Users\Joe\Documen...</a>
-                                    <td class="actions"><a href="#">Editar</a></td>
+                                    <td class="archivo">C:\Users\Joe\Documen...</td>
+                                        <td class="actions">
+                                            <label class="editar" for="chec3">
+                                                <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                            </label>
+                                     
+                                            <label class="eliminar" for="chec5">
+                                                <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
+                                            </label>
+                                        </td>
                                 </tr>
                                 <tr>
                                     <td>John Michael</td>
@@ -140,8 +266,16 @@
                                     <td><span class="status complete">Aprobado</span></td>
                                     <td>15/07/24</td>
                                     <td>22/01/25</td>
-                                    <td class="actions"><a href="#">C:\Users\Joe\Documen...</a>
-                                    <td class="actions"><a href="#">Editar</a></td>
+                                    <td class="archivo">C:\Users\Joe\Documen...</td>
+                                        <td class="actions">
+                                            <label class="editar" for="chec3">
+                                                <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                            </label>
+                                     
+                                            <label class="eliminar" for="chec5">
+                                                <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
+                                            </label>
+                                        </td>
                                 </tr>
                                 <tr>
                                     <td>Alexa Liras</td>
@@ -149,8 +283,16 @@
                                     <td><span class="status complete">Aprobado</span></td>
                                     <td>16/07/24</td>
                                     <td>31/09/24</td>
-                                    <td class="actions"><a href="#">C:\Users\Joe\Documen...</a>
-                                    <td class="actions"><a href="#">Editar</a></td>
+                                    <td class="archivo">C:\Users\Joe\Documen...</td>
+                                        <td class="actions">
+                                            <label class="editar" for="chec3">
+                                                <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                            </label>
+                                     
+                                            <label class="eliminar" for="chec5">
+                                                <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
+                                            </label>
+                                        </td>
                                 </tr>
                                 <tr>
                                     <td>Laurent Perrier</td>
@@ -158,8 +300,16 @@
                                     <td><span class="status rechazado">Rechazado</span></td>
                                     <td>17/07/24</td>
                                     <td>20/07/24</td>
-                                    <td class="actions"><a href="#">C:\Users\Joe\Documen...</a>
-                                    <td class="actions"><a href="#">Editar</a></td>
+                                    <td class="archivo">C:\Users\Joe\Documen...</td>
+                                        <td class="actions">
+                                            <label class="editar" for="chec3">
+                                                <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                            </label>
+                                     
+                                            <label class="eliminar" for="chec5">
+                                                <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
+                                            </label>
+                                        </td>
                                 </tr>
                                 <tr>
                                     <td>Michael Clark</td>
@@ -167,8 +317,16 @@
                                     <td><span class="status complete">Aprobado</span></td>
                                     <td>18/07/24</td>
                                     <td>05/09/24</td>
-                                    <td class="actions"><a href="#">C:\Users\Joe\Documen...</a>
-                                    <td class="actions"><a href="#">Editar</a></td>
+                                    <td class="archivo">C:\Users\Joe\Documen...</td>
+                                        <td class="actions">
+                                            <label class="editar" for="chec3">
+                                                <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                            </label>
+                                     
+                                            <label class="eliminar" for="chec5">
+                                                <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
+                                            </label>
+                                        </td>
                                 </tr>
                                 <tr>
                                     <td>Michael Clark</td>
@@ -176,8 +334,16 @@
                                     <td><span class="status complete">Aprobado</span></td>
                                     <td>18/07/24</td>
                                     <td>24/10/24</td>
-                                    <td class="actions"><a href="#">C:\Users\Joe\Documen...</a>
-                                    <td class="actions"><a href="#">Editar</a></td>
+                                    <td class="archivo">C:\Users\Joe\Documen...</td>
+                                        <td class="actions">
+                                            <label class="editar" for="chec3">
+                                                <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                            </label>
+                                     
+                                            <label class="eliminar" for="chec5">
+                                                <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
+                                            </label>
+                                        </td>
                                 </tr>
 
                                 <tr>
@@ -186,8 +352,16 @@
                                     <td><span class="status pending">Pendiente</span></td>
                                     <td>19/07/24</td>
                                     <td>06/11/24</td>
-                                    <td class="actions"><a href="#">C:\Users\Joe\Documen...</a>
-                                    <td class="actions"><a href="#">Editar</a></td>
+                                    <td class="archivo">C:\Users\Joe\Documen...</td>
+                                    <td class="actions">
+                                        <label class="editar" for="chec3">
+                                            <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                        </label>
+                                 
+                                        <label class="eliminar" for="chec5">
+                                            <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
+                                        </label>
+                                    </td>
                                 </tr>
                                 
                             </tbody>

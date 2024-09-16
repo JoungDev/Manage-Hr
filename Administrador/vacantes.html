@@ -7,47 +7,80 @@
     <link rel="stylesheet" href="../Resources/css/Administrador/vacantes.css">
 </head>
 <body>
-    <input type="checkbox" id="chec1">
+        <input type="checkbox" id="chec1">
         <input type="checkbox" id="chec2">
         <input type="checkbox" id="chec3">
         <input type="checkbox" id="chec4">
+        <input type="checkbox" id="chec5">
+        <input type="checkbox" id="chec6">
         <div class="formulario1">
-            <a href="./vacantes.html"><img src="../Resources/Images/Icons/circle.svg" alt="" class="circle"></a>
+        </form>
+
+        <a href="vacantes.html"><img src="../Resources/Images/Icons/circle.svg" alt=""></a>
         <header id="header">
-          <h1>Técnico de formación</h1>
+            <h1>Crear Vacante</h1>
         </header>
         <form action="">
-          <font>Cargo</font>
-          <input type="text" placeholder="" id="cargo" value="Técnico de formación" />
-          <font>Descripcion</font>
-          <textarea name="" rows="10" cols="4" id="">Buscamos un Técnico Formador especializado en Recursos Humanos para capacitar al personal en prácticas y procedimientos de RRHH. El candidato ideal debe combinar experiencia en gestión de personal con habilidades pedagógicas.
-          </textarea>
-          <font>Sueldo</font>
-          <input type="text" placeholder="telefono" value=" 1.500.000" />
-          <font>Experiencia</font>
-          <input type="text" placeholder="Direccion" value="6 Meses" />
-          <label for="chec2">Modificar</label>
-          
-        </form>
-    </div>
-    <div class="alerta">
-        <img src="../Resources/Images/Icons/check-white.svg" alt="" />
-        <h1>Se actualizo con exito!</h1>
-        <a href="vacantes.html">Ok</a>
-    </div>
-    <div class="alerta2">
-        <img src="../Resources/Images/Icons/check-white.svg" alt="" />
-        <h1>Se elimino con exito!</h1>
-        <a href="vacantes.html">Ok</a>
-    </div>
-    <div class="alerta3">
-        <img src="../Resources/Images/Icons/bell-solid.svg" alt="" />
-        <h1>¿Está seguro de que desea eliminar al técnico de formación? </h1>
-        <div class="col">
-            <a href="vacantes.html">Cancelar</a>
-            <label for="chec4">Eliminar</label>
+        <font>Cargo</font>
+        <input type="text" placeholder="Ingrese el cargo" id="cargo"  />
+        <font>Descripcion</font>
+        <textarea name="" rows="10" cols="4" id="Descripcion" placeholder="Descripcion detallada de la vacante"></textarea>
+        <font>Sueldo</font>
+        <input type="text" placeholder="Sueldo de la vacante"  />
+        <font>Experiencia</font>
+        <input type="text" placeholder="Experiencia" />
+        <div id="botones">
+            <label id="labelChec" for="chec2">Crear</label>
         </div>
-    </div>
+        
+        </form>
+            
+        </div>
+        <div class="formulario2">
+            
+            <a href="vacantes.html"><img src="../Resources/Images/Icons/circle.svg" alt=""></a>
+            <header id="header">
+                <h1>Modificar Vacante</h1>
+            </header>
+            </header>
+            <form action="">
+            <font>Cargo</font>
+            <input type="text" placeholder="" id="cargo" value="Técnico de formación" />
+            <font>Descripcion</font>
+            <textarea name="" rows="10" cols="4" id="">Buscamos un Técnico Formador especializado en Recursos Humanos para capacitar al personal en prácticas y procedimientos de RRHH. El candidato ideal debe combinar experiencia en gestión de personal con habilidades pedagógicas.
+            </textarea>
+            <font>Sueldo</font>
+            <input type="text" placeholder="telefono" value=" 1.500.000" />
+            <font>Experiencia</font>
+            <input type="text" placeholder="Direccion" value="6 Meses" />
+            <div id="botones">
+                <label id="labelChec" for="chec4">Modificar</label>
+            </div>
+        </div>
+        <div class="alerta1">
+            <img src="../Resources/Images/Icons/check-white.svg" alt="" />
+            <h1>Se Creo con exito !</h1>
+            <a href="vacantes.html">Ok</a>
+        </div>
+        <div class="alerta2">
+            <img src="../Resources/Images/Icons/check-white.svg" alt="" />
+            <h1>Se actualizo con exito!</h1>
+            <a href="vacantes.html">Ok</a>
+        </div>
+        <div class="alerta3">
+            <img src="../Resources/Images/Icons/bell-solid.svg" alt="" />
+            <h1>Seguro que quiere eliminar la Vacante Tecnico de formacion </h1>
+            <div class="col">
+                
+                <a href="vacantes.html">Cancelar</a>
+                <label for="chec6">Eliminar</label>
+            </div>
+        </div>
+        <div class="alerta4">
+            <img src="../Resources/Images/Icons/check-white.svg" alt="" />
+            <h1>Se elimino con exito!</h1>
+            <a href="vacantes.html">Ok</a>
+        </div>
     <div class="container">
         <aside class="sidebar">
             <div class="logito">
@@ -85,6 +118,9 @@
             </div>
             
             <section class="dashboard">
+                <label class="agregar" for="chec1">
+                    <img src="../Resources/Images/Icons/plus.svg"><h6>Agregar</h6>
+                </label>
                 <div class="table-title">Vacantes</div>
                     <div class="vacantes">
                             <div class="general">
@@ -95,8 +131,8 @@
                                         <p>Salario: $1.500.000</p>
                                     </div>
                                     <div class="buttons">
-                                        <label for="chec1" class="edit"><img src="../Resources/Images/Icons/edit.svg" alt="" class="edit"></label>
-                                        <label for="chec3" class="delete"><img src="../Resources/Images/Icons/delete.svg" alt="" class="delete"></label>
+                                        <label for="chec3" class="edit"><img src="../Resources/Images/Icons/edit.svg" alt="" class="edit"></label>
+                                        <label for="chec5" class="delete"><img src="../Resources/Images/Icons/delete.svg" alt="" class="delete"></label>
                                     </div>
                                 </div>
                                 <div class="item">
@@ -106,8 +142,8 @@
                                         <p>Salario: $2.300.000</p>
                                     </div>
                                     <div class="buttons">
-                                        <label for="chec1" class="edit"><img src="../Resources/Images/Icons/edit.svg" alt="" class="edit"></label>
-                                        <label for="chec3" class="delete"><img src="../Resources/Images/Icons/delete.svg" alt="" class="delete"></label>
+                                        <label for="chec3" class="edit"><img src="../Resources/Images/Icons/edit.svg" alt="" class="edit"></label>
+                                        <label for="chec5" class="delete"><img src="../Resources/Images/Icons/delete.svg" alt="" class="delete"></label>
                                     </div>
                                 </div>
                                 <div class="item">
@@ -117,8 +153,8 @@
                                     <p>Salario: $4.300.000</p>
                                     </div>
                                     <div class="buttons">
-                                        <label for="chec1" class="edit"><img src="../Resources/Images/Icons/edit.svg" alt="" class="edit"></label>
-                                        <label for="chec3" class="delete"><img src="../Resources/Images/Icons/delete.svg" alt="" class="delete"></label>
+                                        <label for="chec3" class="edit"><img src="../Resources/Images/Icons/edit.svg" alt="" class="edit"></label>
+                                        <label for="chec5" class="delete"><img src="../Resources/Images/Icons/delete.svg" alt="" class="delete"></label>
                                     </div>
                                 </div>
                                 <div class="item">
@@ -128,8 +164,8 @@
                                     <p>Salario: $1.800.000</p>
                                     </div>
                                     <div class="buttons">
-                                        <label for="chec1" class="edit"><img src="../Resources/Images/Icons/edit.svg" alt="" class="edit"></label>
-                                        <label for="chec3" class="delete"><img src="../Resources/Images/Icons/delete.svg" alt="" class="delete"></label>
+                                        <label for="chec3" class="edit"><img src="../Resources/Images/Icons/edit.svg" alt="" class="edit"></label>
+                                        <label for="chec5" class="delete"><img src="../Resources/Images/Icons/delete.svg" alt="" class="delete"></label>
                                     </div>
                                 </div>
                                 <div class="item">
@@ -139,8 +175,8 @@
                                     <p>Salario: $3.500.000</p>
                                     </div>
                                     <div class="buttons">
-                                        <label for="chec1" class="edit"><img src="../Resources/Images/Icons/edit.svg" alt="" class="edit"></label>
-                                        <label for="chec3" class="delete"><img src="../Resources/Images/Icons/delete.svg" alt="" class="delete"></label>
+                                        <label for="chec3" class="edit"><img src="../Resources/Images/Icons/edit.svg" alt="" class="edit"></label>
+                                        <label for="chec5" class="delete"><img src="../Resources/Images/Icons/delete.svg" alt="" class="delete"></label>
                                     </div>
                                 </div>
                                 <div class="item">
@@ -150,8 +186,8 @@
                                     <p>Salario: $3.100.000</p>
                                     </div>
                                     <div class="buttons">
-                                        <label for="chec1" class="edit"><img src="../Resources/Images/Icons/edit.svg" alt="" class="edit"></label>
-                                        <label for="chec3" class="delete"><img src="../Resources/Images/Icons/delete.svg" alt="" class="delete"></label>
+                                        <label for="chec3" class="edit"><img src="../Resources/Images/Icons/edit.svg" alt="" class="edit"></label>
+                                        <label for="chec5" class="delete"><img src="../Resources/Images/Icons/delete.svg" alt="" class="delete"></label>
                                     </div>
                                 </div>
                         </div>

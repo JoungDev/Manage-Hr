@@ -44,53 +44,38 @@
                     </div>
                 </div>
             </div>
+            <input type="checkbox" id="chequed1">
+            <div class="cuadro-blanco1">
+                <img src="../Resources/Images/Icons/check-white.svg">
+                <p>Tu solicitud ha sido enviada correctamente</p>
+                <a href="horasextra.html">Ok</a>
+            </div>
+            
             <section class="dashboard">
                 <div class="titulo">
-                    <h1 class="letra">Incapacidades</h1>
+                    <h1 class="letra">Horas Extra</h1>
                 </div>
 
                 <div class="formulario">
-                    <h1>¡Esperamos que te mejores pronto! <br> Completa tu solicitud de Incapacidad</h1>
+                    <h1>¡Queremos que disfrutes tu tiempo con nosotros! <br> Completa tu solicitud de Horas extra</h1>
                     <form class="cuadro" action="/enviar-solicitud" method="post">
                         <div class="parte1">
                         <div class="form-row">
-                            <label for="nombre">Nombre del Empleado:</label>
-                            <input type="text" id="nombre" name="nombre" required>
+                            <label for="nombre">Fecha de Horas extra</label>
+                            <input type="date" id="nombre" name="nombre" required>
                         </div>
                         <div class="form-row">
-                            <label for="posicion">Posición:</label>
-                            <input type="text" id="posicion" name="posicion" required>
+                            <label for="posicion">Hora Inicio</label>
+                            <input type="time" id="posicion" name="posicion" required>
                         </div>
-                        <div class="form-row">
-                            <label for="fecha-solicitud">Fecha de Solicitud:</label>
-                            <input type="date" id="fecha-solicitud" name="fecha_solicitud" required>
-                        </div>
-                        <div class="button-container">
-                            <button type="reset">Borrar</button>
-                        </div>
-                        </div>
-                        <div class="parte2">
-                        <div class="form-row full-width">
-                            <label for="fecha-inicio">Fecha de Inicio de Vacaciones:</label>
-                            <input type="date" id="fecha-inicio" name="fecha_inicio" required>
-                        </div>
-                        <div class="form-row full-width">
-                            <label for="fecha-fin">Fecha de Fin de Vacaciones:</label>
-                            <input type="date" id="fecha-fin" name="fecha_fin" required>
-                        </div>
-                        <div class="form-row full-width">
-                            <label for="numero-dias">Número de Días Solicitados:</label>
-                            <input type="number" id="numero-dias" name="numero_dias" min="1" required>
-                        </div>
-                        <div class="button-container">
-                            <button type="submit">Enviar Solicitud</button>
-                        </div>
-                        </div>
-            
                         
+                        <div class="form-row full-width">
+                            <label for="fecha-fin">Hora Final</label>
+                            <input type="time" id="fecha-fin" name="fecha_fin" required>
+                        </div>
+                        <label for="chequed1" class="button">Enviar Solicitud</label>
                     </form>
                 </div>
-            
              </section>
         </main>
         
