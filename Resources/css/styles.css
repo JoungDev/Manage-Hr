@@ -203,3 +203,107 @@ body{
     color: #42a5f5;
     transform: scale(1.05);
 }
+/* * Media Queries para pantallas de 780px */
+@media (max-width: 780px) {
+    .container {
+        grid-template-columns: 1fr;
+        padding: 50px;
+        margin: 0 5%;
+    }
+
+    .left {
+        text-align: center;
+    }
+
+    .right {
+        margin-top: 30px;
+    }
+
+    .signin-btn {
+        width: 100%; /* Ocupa todo el ancho del contenedor */
+        margin-left: 0;
+    }
+
+    .social-icons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .left button {
+        margin-bottom: 20px;
+    }
+}
+
+/* Media Queries para pantallas de 320px */
+@media (max-width: 320px) {
+    .container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        margin: 0;
+    }
+
+    header{
+        margin-top: 20px;
+    }
+
+    .parrafo1{
+        font-size: 20px;
+    }
+
+    .parrafo2{
+        font-size: 18px;
+    }
+
+    .left h1 {
+        font-size: 30px;
+    }
+
+    .left img {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .left-content button{
+        font-size: 13px;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .right h2 {
+        font-size: 25px;
+    }
+
+    .input-group label {
+        font-size: 18px;
+    }
+
+    .input-group input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .signin-btn {
+        width: 100%;
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .social-signin p{
+        display: none;
+    }
+    .social-icons {
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .face, .gmail, .linke {
+        display: none;
+    }
+
+    .keep-logged-in{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

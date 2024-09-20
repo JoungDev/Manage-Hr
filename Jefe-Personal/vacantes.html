@@ -16,18 +16,18 @@
     <div class="container">
         <aside class="sidebar">
             <div class="logito">
-                <img src="/Resources/Images/logo.png" alt="">
+                <img src="../Resources/Images/logo.png" alt="">
             </div>
             <ul class="menu">
                 <li><a href="./perfil.html"><img src="../Resources/Images/Icons/user-solid.svg" alt="Icono Directorio"> Perfil</a></li>
                 <li><a href="./vacantes.html"><img src="../Resources/Images/Icons/briefcase-solid.svg" alt="Icono Vacantes"> Vacantes</a></li>
                 <li><a href="./vacaciones.html"><img src="../Resources/Images/Icons/suitcase-solid.svg" alt="Icono Vacaciones"> Vacaciones</a></li>
                 <li><a href="./Incapacidades.html"><img src="../Resources/Images/Icons/book-medical-solid.svg" alt="Icono Incapacidades"> Incapacidades</a></li>
-                <li><a href="./horasextra.html"><img src="/Resources/Images/Icons/calendar-plus-solid.svg" alt="Icono Horas Extra"> Horas extra</a></li>
-                <li><a href="./notificaciones.html"><img src="/Resources/Images/Icons/bell-solid.svg" alt="Icono Notificaciones"> Notificaciones</a></li>
+                <li><a href="./horasextra.html"><img src="../Resources/Images/Icons/calendar-plus-solid.svg" alt="Icono Horas Extra"> Horas extra</a></li>
+                <li><a href="./notificaciones.html"><img src="../Resources/Images/Icons/bell-solid.svg" alt="Icono Notificaciones"> Notificaciones</a></li>
             </ul>
             <div class="logout">
-                <a href="/index.html"><button class="logout-button">Cerrar Sesión</button></a>
+                <a href="../index.html"><button class="logout-button">Cerrar Sesión</button></a>
             </div>
         </aside>
         <main class="main-content">
@@ -36,11 +36,30 @@
                     <input type="text" placeholder="Search">
                 </div>
                 <div class="user-info">
-                    <div class="icons">
-                        <img src="/Resources/Images/Icons/notificaciones.png" alt="Notification Icon">
+                    <div class="noti">
+                        <input type="checkbox" id="toggle-menu" class="toggle-menu">
+                        <label for="toggle-menu" class="noti-icon">
+                            <img src="../Resources/Images/Icons/notificaciones.png">
+                        </label>
+                        <ul class="sub-noti">
+                            <div class="mini">
+                                Carlos Hernandez ha enviado una solicitud de Vacaciones
+                            </div>
+                            <div class="mini">
+                                Marcela Reyes ha enviado una solicitud de Horas extra
+                            </div>
+                            <div class="mini">
+                                Carolina Carrillo ha enviado una solicitud de Horas extra
+                            </div>
+                            <div class="mini">
+                                Julian Rozo ha enviado una solicitud de Horas extra
+                            </div>
+                            
+                        </ul>
                     </div>
+                    
                     <div class="user-profile">
-                        <img src="/Resources/Images/3.jpg" alt="User Avatar" class="avatar">
+                        <img src="../Resources/Images/3.jpg" alt="User Avatar" class="avatar">
                         <div class="user-details">
                             <span class="user-name">Yon Piter Ruiz</span>
                             <span class="user-email">Jefe De Personal</span>

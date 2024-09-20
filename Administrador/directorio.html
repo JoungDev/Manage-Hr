@@ -247,7 +247,7 @@
     <div class="container">
         <aside class="sidebar">
             <div class="logito">
-            <img src="/Resources/Images/logo.png" alt="">
+            <img src="../Resources/Images/logo.png" alt="">
             </div>
             <ul class="menu">
                 <li><a href="./directorio.html"><img src="../Resources/Images/Icons/clipboard-regular.svg" alt="Icono Directorio"> Directorio</a></li>
@@ -256,9 +256,10 @@
                 <li><a href="./Incapacidades.html"><img src="../Resources/Images/Icons/book-medical-solid.svg" alt="Icono Incapacidades"> Incapacidades</a></li>
                 <li><a href="./horasextra.html"><img src="../Resources/Images/Icons/calendar-plus-solid.svg" alt="Icono Horas Extra"> Horas extra</a></li>
                 <li><a href="./pazysalvo.html"><img src="../Resources/Images/Icons/check-to-slot-solid.svg" alt="Icono Paz y Salvos"> Paz y Salvos</a></li>
+                <li><a href="./notificaciones.html"><img src="../Resources/Images/Icons/bell-solid.svg" alt="Icono Notificaciones"> Notificaciones</a></li>
             </ul>
             <div class="logout">
-            <a href="/index.html"><button class="logout-button">Cerrar Sesión</button></a>
+            <a href="../index.html"><button class="logout-button">Cerrar Sesión</button></a>
             </div>
         </aside>
         <main class="main-content">
@@ -267,10 +268,28 @@
                     <input type="text" placeholder="Search">
                 </div>
                 <div class="user-info">
-                    <div class="icons">
-                        <img src="../Resources/Images/Icons/notificaciones.png" alt="Notification Icon">
-                    </div>
                     <div class="user-profile">
+                        <div class="noti">
+                            <input type="checkbox" id="toggle-menu" class="toggle-menu">
+                            <label for="toggle-menu" class="noti-icon">
+                                <img src="../Resources/Images/Icons/notificaciones.png">
+                            </label>
+                            <ul class="sub-noti">
+                                <div class="mini">
+                                    Carlos Hernandez ha enviado una solicitud de Vacaciones
+                                </div>
+                                <div class="mini">
+                                    Marcela Reyes ha enviado una solicitud de Horas extra
+                                </div>
+                                <div class="mini">
+                                    Carolina Carrillo ha enviado una solicitud de Horas extra
+                                </div>
+                                <div class="mini">
+                                    Julian Rozo ha enviado una solicitud de Horas extra
+                                </div>
+                                
+                            </ul>
+                        </div>
                         <img src="../Resources/Images/1.jpg" alt="User Avatar" class="avatar">
                         <div class="user-details">
                             <span class="user-name">Juan Joven</span>
@@ -313,11 +332,14 @@
                                 <td>Calle 100 #15-30, Bogotá</td>
                                 <td><span class="status online">ACTIVO</span></td>
                                 <td class="actions">
-                                    <label class="editar" for="chec5">
-                                        <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                    <!-- <label class="ver" for="chequed1">
+                                        <img src="../Resources/Images/Icons/eye-solid.svg" alt="ver">
+                                    </label> -->
+                                    <label class="editar" for="chec5"> 
+                                        <img src="../Resources/Images/Icons/edit.svg">
                                     </label>
                                     <label class="eliminar" for="chec9">
-                                        <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
+                                        <img src="../Resources/Images/Icons/trash.svg">
                                     </label>
                                 </td>
                             </tr>
@@ -336,11 +358,14 @@
                                 <td>Carrera 7 #45-21, Bogotá</td>
                                 <td><span class="status online">ACTIVO</span></td>
                                 <td class="actions">
+                                    <!-- <label for="chequed1"></label>
+                                        <img src="../Resources/Images/Icons/eye-solid.svg" alt="ver" title="Ver Hoja de vida"/>
+                                    </label>--> 
                                     <label class="editar" for="chec5">
-                                        <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                        <img src="../Resources/Images/Icons/edit.svg">
                                     </label>
                                     <label class="eliminar" for="chec9">
-                                        <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
+                                        <img src="../Resources/Images/Icons/trash.svg">
                                     </label>
                                 </td>
                             </tr>
@@ -359,12 +384,15 @@
                                 <td>Avenida 19 #120-10, Bogotá</td>
                                 <td><span class="status offline">INACTIVO</span></td>
                                 <td class="actions">
+                                    <!-- <label for="chequed1"></label>
+                                        <img src="../Resources/Images/Icons/eye-solid.svg" alt="ver" title="Ver Hoja de vida"/>
+                                    </label>--> 
                                     <label class="editar" for="chec5">
-                                        <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                        <img src="../Resources/Images/Icons/edit.svg">
                                     </label>
                              
                                     <label class="eliminar" for="chec9">
-                                        <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
+                                        <img src="../Resources/Images/Icons/trash.svg">
                                     </label>
                                 </td>
                             </tr>
@@ -383,12 +411,15 @@
                                 <td>Calle 26 #30-15, Bogotá</td>
                                 <td><span class="status online">ACTIVO</span></td>
                                 <td class="actions">
+                                    <!-- <label for="chequed1"></label>
+                                        <img src="../Resources/Images/Icons/eye-solid.svg" alt="ver" title="Ver Hoja de vida"/>
+                                    </label>--> 
                                     <label class="editar" for="chec5">
-                                        <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                        <img src="../Resources/Images/Icons/edit.svg">
                                     </label>
                              
                                     <label class="eliminar" for="chec9">
-                                        <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
+                                        <img src="../Resources/Images/Icons/trash.svg">
                                     </label>
                                 </td>
                             </tr>
@@ -407,12 +438,15 @@
                                 <td>Carrera 10 #58-70, Bogotá</td>
                                 <td><span class="status offline">INACTIVO</span></td>
                                 <td class="actions">
+                                    <!-- <label for="chequed1"></label>
+                                        <img src="../Resources/Images/Icons/eye-solid.svg" alt="ver" title="Ver Hoja de vida"/>
+                                    </label>--> 
                                     <label class="editar" for="chec5">
-                                        <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                        <img src="../Resources/Images/Icons/edit.svg">
                                     </label>
                              
                                     <label class="eliminar" for="chec9">
-                                        <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
+                                        <img src="../Resources/Images/Icons/trash.svg">
                                     </label>
                                 </td>
                             </tr>
@@ -431,12 +465,15 @@
                                 <td>Calle 72 #24-35, Bogotá</td>
                                 <td><span class="status online">ACTIVO</span></td>
                                 <td class="actions">
+                                    <!-- <label for="chequed1"></label>
+                                        <img src="../Resources/Images/Icons/eye-solid.svg" alt="ver" title="Ver Hoja de vida"/>
+                                    </label>--> 
                                     <label class="editar" for="chec5">
-                                        <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                        <img src="../Resources/Images/Icons/edit.svg">
                                     </label>
                              
                                     <label class="eliminar" for="chec9">
-                                        <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
+                                        <img src="../Resources/Images/Icons/trash.svg">
                                     </label>
                                 </td>
                             </tr>
@@ -455,12 +492,15 @@
                                 <td>Carrera 15 #112-35, Bogotá</td>
                                 <td><span class="status offline">INACTIVO</span></td>
                                 <td class="actions">
+                                    <!-- <label for="chequed1"></label>
+                                        <img src="../Resources/Images/Icons/eye-solid.svg" alt="ver" title="Ver Hoja de vida"/>
+                                    </label>--> 
                                     <label class="editar" for="chec5">
-                                        <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                        <img src="../Resources/Images/Icons/edit.svg">
                                     </label>
                              
                                     <label class="eliminar" for="chec9">
-                                        <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
+                                        <img src="../Resources/Images/Icons/trash.svg">
                                     </label>
                                 </td>
                             </tr>
@@ -479,12 +519,15 @@
                                 <td>Calle 85 #12-20, Bogotá</td>
                                 <td><span class="status online">ACTIVO</span></td>
                                 <td class="actions">
+                                    <!-- <label for="chequed1"></label>
+                                        <img src="../Resources/Images/Icons/eye-solid.svg" alt="ver" title="Ver Hoja de vida"/>
+                                    </label>--> 
                                     <label class="editar" for="chec5">
-                                        <img src="../Resources/Images/Icons/edit.svg"><h6>Editar</h6>
+                                        <img src="../Resources/Images/Icons/edit.svg">
                                     </label>
                              
                                     <label class="eliminar" for="chec9">
-                                        <img src="../Resources/Images/Icons/trash.svg"><h6>Eliminar</h6>
+                                        <img src="../Resources/Images/Icons/trash.svg">
                                     </label>
                                 </td>
                             </tr>
