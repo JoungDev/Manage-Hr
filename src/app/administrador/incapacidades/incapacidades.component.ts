@@ -13,7 +13,7 @@ export class IncapacidadesComponent {
   agregarIncapacidad() {
     Swal.fire({
       title: 'Agregar Incapacidad',
-      text: '¿Quieres agregar una nueva vacación?',
+      text: '¿Quieres agregar una nueva incapacidad?',
       icon: 'question',
       showCancelButton: true,
       confirmButtonText: 'Sí, agregar',
@@ -64,7 +64,7 @@ export class IncapacidadesComponent {
 
         // Aquí puedes realizar la lógica para guardar los cambios
         console.log({ nombre, cargo, fechaInicio, fechaFin });
-        Swal.fire('¡Editado!', 'La vacación ha sido editada.', 'success');
+        Swal.fire('¡Editado!', 'La incapacidad ha sido editada.', 'success');
       }
     });
   }
@@ -80,7 +80,7 @@ export class IncapacidadesComponent {
       cancelButtonText: 'Cancelar',
     }).then((result) => {
       if (result.isConfirmed) {
-        Swal.fire('¡Eliminado!', 'La vacación ha sido eliminada.', 'success');
+        Swal.fire('¡Eliminado!', 'La incapacidad ha sido eliminada.', 'success');
       }
     });
   }
